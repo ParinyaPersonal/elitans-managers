@@ -36,19 +36,5 @@
     </div>
 </div>
 <script>
-    $("#toggle-out, #toggle-in").on("click", function() {
-        if ($("#sidebar").hasClass("hidden")) {
-            $("#sidebar").removeClass("hidden");
-            $("#sidebar").addClass("block");
-        } else {
-            $("#sidebar").removeClass("block");
-            $("#sidebar").addClass("hidden");
-        }
-    })
-
-    $("#logout").on("click", function() {
-        localStorage.removeItem("base");
-        localStorage.removeItem("api");
-        location.reload()
-    })
+    structure()
 </script>

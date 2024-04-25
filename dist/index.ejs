@@ -12,20 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        if (!location.pathname.endsWith("config")) {
-            if (!localStorage.getItem("base") || !localStorage.getItem("api"))
-                location.href = "/config";
-        }
-
-        function uuidv4() {
-            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-                const r = Math.random() * 16 | 0;
-                const v = c === 'x' ? r : (r & 0x3 | 0x8);
-                return v.toString(16);
-            });
-        }
-    </script>
+    <script src="/assets/script.js"></script>
     <title>Addons Managers - <%= title %></title>
 </head>
 

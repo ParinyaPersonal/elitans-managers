@@ -14,41 +14,5 @@
     </form>
 </div>
 <script>
-    $("#config").submit(function() {
-        $.ajax({
-            type: "POST",
-            url: "/api",
-            "headers": {
-                "Content-Type": "application/json"
-            },
-            data: JSON.stringify({
-                api: $("#api").val()
-            }),
-            success: async function(data) {
-                console.log(data)
-                if (data === true) {
-                    await Swal.fire({
-                        icon: 'success',
-                        title: 'Success',
-                        text: 'API is valid',
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
-                    localStorage.setItem("api", $("#api").val());
-                    localStorage.setItem("base", $("#path").val());
-                    location.href = "/create-resource";
-                } else {
-                    await Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'API is not valid',
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
-                    location.reload();
-                }
-            }
-        })
-        return false;
-    })
+    config();
 </script>
