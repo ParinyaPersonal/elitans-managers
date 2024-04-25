@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="/assets/active.css" type="text/css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        if (!location.pathname.endsWith("config")) {
+            if (!localStorage.getItem("base") || !localStorage.getItem("api"))
+                location.href = "/config";
+        }
+
+        function uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                const r = Math.random() * 16 | 0;
+                const v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+    </script>
+    <title>Addons Managers - <%= title %></title>
+</head>
+
+<body class="text-zinc-700 bg-zinc-100">
+
+    <div class="max-w-[1000px] min-h-screen mx-auto flex items-center justify-center px-3">
+        <div class="grid w-full justify-center">
+            <div class="grid gap-2 py-6 justify-center">
+                <center>
+                    <img class="drop-shadow-xl" src="/assets/favicon.ico" alt="logo">
+                </center>
+                <p class="text-3xl text-center">Elitans Managers</p>
+                <small class="text-zinc-400 text-center">This is a tools for developers to manage addons in game minecraft bedrock edition</small>
+                <small class="text-zinc-400 text-center">Made by <a class="text-yellow-400 cursor-pointer" href="https://github.com/ParinyaPersonal" target="_blank">ParinyaPersonal</a></small>
+            </div>
+            <% if (path=="/home" ) { %>
+            <%- include('./home.ejs') %>
+            <% } %>
+            <% if (path=="/config" ) { %>
+            <%- include('./config.ejs') %>
+            <% } %>
+            <% if(path.startsWith("/resource") || path.startsWith("/behavior")) { %>
+            <%- include('./structure.ejs') %>
+            <% } %>
+            <div class="p-6">
+                <p class="text-zinc-300 text-center">Copyright @ 2024 Elitans Managers</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

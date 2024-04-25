@@ -1,0 +1,54 @@
+<div class="max-w-[30rem] flex justify-center">
+    <form id="config" class="grid gap-4 w-full">
+        <div class="grid gap-2">
+            <label for="api">API <a class="text-red-500 text-xs">* you can get it from owner</a></label>
+            <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="api" id="api" placeholder="Please enter your API" autocomplete="off" required>
+        </div>
+        <div class="grid gap-2">
+            <label for="path">Path <a class="text-red-500 text-xs">* this is path from com.mojang</a></label>
+            <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="path" id="path" value="C:\Users\ADMIN\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang" placeholder="Please enter your path" required>
+        </div>
+        <div class="grid gap-2">
+            <button class="text-white px-3 py-2 bg-yellow-500 transition  duration-200 ease select-none hover:bg-yellow-600 focus:outline-none" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script>
+    $("#config").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/api",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            data: JSON.stringify({
+                api: $("#api").val()
+            }),
+            success: async function(data) {
+                console.log(data)
+                if (data === true) {
+                    await Swal.fire({
+                        icon: 'success',
+                        title: 'Success',
+                        text: 'API is valid',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    localStorage.setItem("api", $("#api").val());
+                    localStorage.setItem("base", $("#path").val());
+                    location.href = "/create-resource";
+                } else {
+                    await Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'API is not valid',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    location.reload();
+                }
+            }
+        })
+        return false;
+    })
+</script>

@@ -1,0 +1,25 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "",
+        "description": " ",
+        "uuid": "",
+        "version": [
+            0,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            0,
+            0,
+            0
+        ]
+    },
+    "metadata": {
+        "authors": [
+            ""
+        ],
+        "license": "MIT",
+        "url": ""
+    }
+}

@@ -1,0 +1,148 @@
+<form onsubmit="handleSubmit(event)" id="create-resource" class="flex-wrap gap-3">
+    <div class="grid gap-3 p-3">
+        <div class="flex gap-3">
+            <div class="grid gap-2 w-full">
+                <label for="folder"><a class="text-red-500 me-2">*</a>Folder Name</label>
+                <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="folder" id="folder" placeholder="Please enter folder name" required>
+            </div>
+            <div class="grid gap-2 w-full">
+                <label for="icon"><a class="text-red-500 me-2">*</a> Pack Icon</label>
+                <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 block w-full text-sm focus:z-10 focus:border-yellow-500 focus:ring-yellow-500
+                        file:bg-gray-100 file:border-0 file:me-4 file:p-2.5 cursor-pointer" type="file" name="icon" id="icon" accept="image/png" required>
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <label for="name"><a class="text-red-500 me-2">*</a>Pack Name</label>
+            <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="name" id="name" placeholder="Please enter pack name" required>
+        </div>
+        <div class="grid gap-2">
+            <label for="description"><a class="text-red-500 me-2">*</a>Pack Description</label>
+            <textarea class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="description" id="description" placeholder="Please enter pack description" rows="9" required></textarea>
+        </div>
+        <div class="grid grid-cols-2 space-x-3">
+            <div class="grid gap-2">
+                <label><a class="text-red-500 me-2">*</a>Pack Version</label>
+                <div class="flex">
+                    <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="number" min="0" value="0" name="v0" id="v0" required>
+                    <p class="px-2 py-2 text-sm border-y text-center inline-block border-zinc-300">.</p>
+                    <input class=" bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="number" min="0" value="0" name="v1" id="v1" required>
+                    <p class="px-2 py-2 text-sm border-y text-center inline-block border-zinc-300">.</p>
+                    <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="number" min="0" value="0" name="v2" id="v2" required>
+                </div>
+            </div>
+            <div class="grid gap-2">
+                <label><a class="text-red-500 me-2">*</a>Min Engine Version</label>
+                <div class="flex">
+                    <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="number" min="0" value="0" name="e0" id="e0" required>
+                    <p class="px-2 py-2 text-sm border-y text-center inline-block border-zinc-300">.</p>
+                    <input class=" bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="number" min="0" value="0" name="e1" id="e1" required>
+                    <p class="px-2 py-2 text-sm border-y text-center inline-block border-zinc-300">.</p>
+                    <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="number" min="0" value="0" name="e2" id="e2" required>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-3">
+            <div class="grid gap-2 w-full">
+                <label for="author">Pack Author</label>
+                <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="author" id="author" placeholder="Please enter pack author">
+            </div>
+            <div class="grid gap-2 w-full">
+                <label for="url">Pack Url</label>
+                <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="url" name="url" id="url" placeholder="Please enter pack url">
+            </div>
+        </div>
+    </div>
+    <div class="flex-wrap px-3 pb-3">
+        <textarea class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 w-full h-full p-2.5 focus:outline-none" name="res" id="res" rows="15" readonly></textarea>
+        <button class="w-full bg-zinc-50 hover:bg-zinc-200 border border-zinc-300 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-sm px-5 py-2.5 text-center mt-2 transition duration-200">Create Resource Pack</button>
+    </div>
+</form>
+<script>
+    function handleSubmit(e) {
+        e.preventDefault()
+        const form = new FormData();
+        form.append("icon", $("#icon").prop("files")[0])
+        form.append("manifest", $("#res").val())
+        form.append("base", localStorage.getItem("base"))
+        form.append("folder", $("#folder").val())
+        form.append("api", localStorage.getItem("api"))
+        $.ajax({
+            url: "/resource/create",
+            method: "POST",
+            data: form,
+            contentType: false,
+            processData: false,
+            mimeType: "multipart/form-data",
+            success: async function(data) {
+                await Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Resource Pack Created',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                window.location.reload();
+            },
+            error: async function(data) {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Failed to Create Resource Pack',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                window.location.reload();
+            }
+        })
+        return false
+    }
+
+    $.ajax({
+        url: "/assets/config/rmanifest.json",
+        method: "GET",
+        success: function(data) {
+            data.header.uuid = uuidv4();
+            data.modules[0].uuid = uuidv4();
+            $("#res").val(JSON.stringify(data, null, 4))
+        }
+    })
+
+    $("#icon").on("change", function() {
+        $("#view-icon").attr("src", URL.createObjectURL(this.files[0]))
+    })
+
+    $("#name").on("keyup", function() {
+        const res = JSON.parse($("#res").val())
+        res.header.name = $(this).val()
+        $("#res").val(JSON.stringify(res, null, 4))
+    })
+
+    $("#description").on("keyup", function() {
+        const res = JSON.parse($("#res").val())
+        res.header.description = $(this).val()
+        $("#res").val(JSON.stringify(res, null, 4))
+    })
+
+    $("#author").on("keyup", function() {
+        const res = JSON.parse($("#res").val())
+        res.metadata.authors[0] = $(this).val()
+        $("#res").val(JSON.stringify(res, null, 4))
+    })
+
+    $("#url").on("keyup", function() {
+        const res = JSON.parse($("#res").val())
+        res.metadata.url = $(this).val()
+        $("#res").val(JSON.stringify(res, null, 4))
+    })
+
+    Array(["v0", "v1", "v2", "e0", "e1", "e2"]).forEach((id) => {
+        const fuc = () => {
+            const res = JSON.parse($("#res").val())
+            res.header.version = [parseInt($("#v0").val()), parseInt($("#v1").val()), parseInt($("#v2").val())]
+            res.header.min_engine_version = [parseInt($("#e0").val()), parseInt($("#e1").val()), parseInt($("#e2").val())]
+            $("#res").val(JSON.stringify(res, null, 4))
+        }
+        $(`#${id}`).on("change", fuc)
+        $(`#${id}`).on("keyup", fuc)
+    })
+</script>
