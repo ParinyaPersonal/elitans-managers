@@ -55,33 +55,33 @@
                 <ul class="col-span-2 items-center w-full text-zinc-900 bg-zinc-50 border border-zinc-300 sm:flex divide-x divide-zinc-300">
                     <li class="w-full border-zinc-200">
                         <div class="flex items-center ps-3">
-                            <input id="javascript" type="radio" value="javascript" name="language" class="w-4 h-4 bg-zinc-100 border-zinc-300" disabled>
+                            <input id="javascript" type="radio" value="javascript" name="language" class="w-4 h-4 bg-zinc-100 border-zinc-300" disabled required>
                             <label for="javascript" class="w-full py-2.5 text-sm ms-2 text-zinc-900">Using JavaScript</label>
                         </div>
                     </li>
                     <li class="w-full border-zinc-200">
                         <div class="flex items-center ps-3">
-                            <input id="typescript" type="radio" value="typescript" name="language" class="w-4 h-4 bg-zinc-100 border-zinc-300" disabled>
+                            <input id="typescript" type="radio" value="typescript" name="language" class="w-4 h-4 bg-zinc-100 border-zinc-300" disabled required>
                             <label for="typescript" class="w-full py-2.5 text-sm ms-2 text-zinc-900">Using TypeScript</label>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <div id="script" class="grid-cols-5 gap-3 hidden">
+        <div class="grid-cols-5 gap-3 grid">
             <div class="grid gap-2 w-full">
                 <label for="entry"><a class="text-red-500 me-2">*</a>Pack Entry</label>
-                <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" type="text" name="entry" id="entry" placeholder="Please enter pack entry" value="scripts/" required>
+                <input class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none disabled:text-zinc-500" type="text" name="entry" id="entry" placeholder="Please enter pack entry" value="scripts/" disabled required>
             </div>
             <div class="grid gap-2 w-full col-span-2">
                 <label for="server"><a class="text-red-500 me-2">*</a>Module Server</label>
-                <select class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" name="server" id="server" required>
+                <select class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" name="server" id="server" disabled required>
                     <option value="" class="text-zinc-500">please select version of server</option>
                 </select>
             </div>
             <div class="grid gap-2 w-full col-span-2">
                 <label for="ui"><a class="text-red-500 me-2">*</a>Module Server Ui</label>
-                <select class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" name="ui" id="ui" required>
+                <select class="bg-zinc-50 border border-zinc-300 text-zinc-900 text-sm focus:ring-yellow-500 focus:border-yellow-500 w-full p-2.5 focus:outline-none" name="ui" id="ui" disabled required>
                     <option value="" class="text-zinc-500">please select version of server ui</option>
                 </select>
             </div>
