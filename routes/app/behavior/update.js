@@ -1,63 +1,265 @@
-"use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const __1 = __importDefault(require("../.."));
-const axios_1 = __importDefault(require("axios"));
-const fs_1 = __importDefault(require("fs"));
-const child_process_1 = require("child_process");
-function getLastVersion(packages) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const response = (yield axios_1.default.get(`https://registry.npmjs.org/${packages}`)).data;
-        const data = Array(...new Set(Object.keys(response.versions)
-            .filter((item) => item.endsWith("stable"))
-            .map((item) => ({
-            default: item.split(".").slice(0, 3).join("."),
-            version: item
-        }))
-            .reverse()));
-        return data[0];
+'use strict';
+const _0x2f8286 = _0x4e27;
+function _0x1d04() {
+    const _0x2065fb = [
+        'done',
+        'ess',
+        '1rcUcVp',
+        '2400VzbaDs',
+        'join',
+        'gistry.npm',
+        'HdVOH',
+        'utf-8',
+        'npm\x20instal',
+        'child_proc',
+        'reverse',
+        '\x20&&\x20',
+        'base',
+        'ft/server-',
+        'https://re',
+        'json',
+        'eiTCo',
+        'endsWith',
+        'split',
+        'next',
+        '/behavior/',
+        'keys',
+        '264606quSEZL',
+        '823520OPbFKc',
+        'readFileSy',
+        'IPogv',
+        'WusUJ',
+        '@minecraft',
+        'version',
+        '/manifest.',
+        'isDirector',
+        'iGUCA',
+        'apply',
+        '../..',
+        'module_nam',
+        'send',
+        'update',
+        'lstatSync',
+        'then',
+        'SmaNG',
+        '138hCDJbD',
+        'forEach',
+        'stringify',
+        '__esModule',
+        'UDXqm',
+        'map',
+        'throw',
+        '542316BzDBwx',
+        '27ySdBzm',
+        'post',
+        '\x20-\x20ts',
+        'vfJdM',
+        'message',
+        'nt_behavio',
+        'js.org/',
+        'slice',
+        'gmPBI',
+        'default',
+        'r_packs',
+        'get',
+        'l\x20@minecra',
+        'fault',
+        '3NHsKgF',
+        '48spFRmc',
+        'value',
+        'oZSXx',
+        'stable',
+        'fmyDu',
+        'filter',
+        '__awaiter',
+        '/server-ui',
+        'readdirSyn',
+        '4091217PwravN',
+        '18835yNHYbs',
+        'body',
+        'exec',
+        'erty',
+        '14465mAudRt',
+        'ync',
+        'axios',
+        'versions',
+        'defineProp',
+        '36372ApZcNd',
+        'pOYMH',
+        'lJUFD',
+        'ft/server@',
+        'PZVLH',
+        'YBkwU',
+        'data',
+        '/developme',
+        'PQNla',
+        '__importDe',
+        'zhUrk',
+        'GvuqV',
+        'status',
+        'parse',
+        'alzbU',
+        'writeFileS',
+        'cd\x20',
+        'zSqQj',
+        '/server',
+        'dependenci',
+        'ui@'
+    ];
+    _0x1d04 = function () {
+        return _0x2065fb;
+    };
+    return _0x1d04();
+}
+(function (_0x2deff8, _0x439435) {
+    const _0x69ac5e = _0x4e27, _0x2d1e02 = _0x2deff8();
+    while (!![]) {
+        try {
+            const _0x124bff = parseInt(_0x69ac5e(0x214)) / (-0x1b28 + 0x161f + -0x102 * -0x5) * (-parseInt(_0x69ac5e(0x1c1)) / (-0x3a * -0x88 + 0x1365 * 0x2 + 0x88 * -0x83)) + parseInt(_0x69ac5e(0x1e9)) / (-0xb5a + 0x1981 + -0xe24) * (parseInt(_0x69ac5e(0x1da)) / (-0x3b * 0x1b + 0x1f4c + 0x1 * -0x190f)) + -parseInt(_0x69ac5e(0x1f4)) / (-0x5 * -0x52f + 0x19 * -0xc1 + -0x70d) * (parseInt(_0x69ac5e(0x1d3)) / (0x1fe0 + 0x11de + -0x128 * 0x2b)) + parseInt(_0x69ac5e(0x1fd)) / (-0x10de + -0x2598 + -0x367d * -0x1) * (parseInt(_0x69ac5e(0x1ea)) / (-0x2099 + -0xb64 + 0x2c05)) + -parseInt(_0x69ac5e(0x1db)) / (-0x1b25 + -0x101f * -0x1 + -0x95 * -0x13) * (-parseInt(_0x69ac5e(0x1c2)) / (0x6b * 0x42 + -0x1 * 0xf47 + -0xc45)) + -parseInt(_0x69ac5e(0x1f8)) / (0x55 * 0x13 + 0x1148 + -0x178c) * (-parseInt(_0x69ac5e(0x215)) / (-0x1c5e + -0x1 * 0x139 + 0x1da3)) + -parseInt(_0x69ac5e(0x1f3)) / (-0x1 * -0x2182 + -0xa1e + -0x1757);
+            if (_0x124bff === _0x439435)
+                break;
+            else
+                _0x2d1e02['push'](_0x2d1e02['shift']());
+        } catch (_0x3275b6) {
+            _0x2d1e02['push'](_0x2d1e02['shift']());
+        }
+    }
+}(_0x1d04, -0x1 * 0x5e9f + -0x2 * 0x1425e + 0x51291));
+var __awaiter = this && this[_0x2f8286(0x1f0)] || function (_0x10e866, _0x398537, _0x5a764a, _0x3774cc) {
+        const _0x2601b8 = _0x2f8286, _0x367e35 = {
+                'zhUrk': function (_0x11f904, _0x550448) {
+                    return _0x11f904(_0x550448);
+                },
+                'fmyDu': function (_0x487887, _0x5cc963) {
+                    return _0x487887 instanceof _0x5cc963;
+                },
+                'zSqQj': _0x2601b8(0x1d9),
+                'HdVOH': function (_0x202855, _0x3a8088) {
+                    return _0x202855(_0x3a8088);
+                }
+            };
+        function _0x5f44f1(_0x8341c1) {
+            const _0x5271db = _0x2601b8, _0x2bd1c4 = {
+                    'iGUCA': function (_0x5d20a3, _0x285abf) {
+                        const _0x4fd17d = _0x4e27;
+                        return _0x367e35[_0x4fd17d(0x207)](_0x5d20a3, _0x285abf);
+                    }
+                };
+            return _0x367e35[_0x5271db(0x1ee)](_0x8341c1, _0x5a764a) ? _0x8341c1 : new _0x5a764a(function (_0x484e29) {
+                const _0x3a5dcb = _0x5271db;
+                _0x2bd1c4[_0x3a5dcb(0x1ca)](_0x484e29, _0x8341c1);
+            });
+        }
+        return new (_0x5a764a || (_0x5a764a = Promise))(function (_0x37be12, _0xbf52f8) {
+            const _0x43f8e0 = _0x2601b8, _0x535d1e = {
+                    'alzbU': function (_0x3cdaa8, _0xe3c21e) {
+                        const _0x114b2a = _0x4e27;
+                        return _0x367e35[_0x114b2a(0x207)](_0x3cdaa8, _0xe3c21e);
+                    },
+                    'oZSXx': function (_0x739528, _0x431163) {
+                        const _0x291465 = _0x4e27;
+                        return _0x367e35[_0x291465(0x207)](_0x739528, _0x431163);
+                    },
+                    'YBkwU': function (_0xac6120, _0x4d26f3) {
+                        const _0x327be6 = _0x4e27;
+                        return _0x367e35[_0x327be6(0x207)](_0xac6120, _0x4d26f3);
+                    },
+                    'SmaNG': function (_0x3709e8, _0x3d9d0c) {
+                        const _0x3ecaf7 = _0x4e27;
+                        return _0x367e35[_0x3ecaf7(0x218)](_0x3709e8, _0x3d9d0c);
+                    }
+                };
+            function _0x5d7456(_0x33d742) {
+                const _0x464949 = _0x4e27;
+                try {
+                    _0x535d1e[_0x464949(0x20b)](_0x4a67a3, _0x3774cc[_0x464949(0x1be)](_0x33d742));
+                } catch (_0x56ba71) {
+                    _0x535d1e[_0x464949(0x1ec)](_0xbf52f8, _0x56ba71);
+                }
+            }
+            function _0x23988c(_0x215667) {
+                const _0x51f437 = _0x4e27;
+                try {
+                    _0x367e35[_0x51f437(0x207)](_0x4a67a3, _0x3774cc[_0x367e35[_0x51f437(0x20e)]](_0x215667));
+                } catch (_0x107bf5) {
+                    _0x367e35[_0x51f437(0x218)](_0xbf52f8, _0x107bf5);
+                }
+            }
+            function _0x4a67a3(_0x2c3b05) {
+                const _0xa2b091 = _0x4e27;
+                _0x2c3b05[_0xa2b091(0x212)] ? _0x535d1e[_0xa2b091(0x202)](_0x37be12, _0x2c3b05[_0xa2b091(0x1eb)]) : _0x535d1e[_0xa2b091(0x1d2)](_0x5f44f1, _0x2c3b05[_0xa2b091(0x1eb)])[_0xa2b091(0x1d1)](_0x5d7456, _0x23988c);
+            }
+            _0x367e35[_0x43f8e0(0x218)](_0x4a67a3, (_0x3774cc = _0x3774cc[_0x43f8e0(0x1cb)](_0x10e866, _0x398537 || []))[_0x43f8e0(0x1be)]());
+        });
+    }, __importDefault = this && this[_0x2f8286(0x206) + _0x2f8286(0x1e8)] || function (_0x386009) {
+        const _0x2b5234 = _0x2f8286;
+        return _0x386009 && _0x386009[_0x2b5234(0x1d6)] ? _0x386009 : { 'default': _0x386009 };
+    };
+Object[_0x2f8286(0x1fc) + _0x2f8286(0x1f7)](exports, _0x2f8286(0x1d6), { 'value': !![] });
+function _0x4e27(_0x49dbb7, _0x1e33c4) {
+    const _0x1d1de6 = _0x1d04();
+    return _0x4e27 = function (_0xd26481, _0x153d65) {
+        _0xd26481 = _0xd26481 - (0x1018 + 0x3 * 0x902 + 0x2969 * -0x1);
+        let _0x23b23a = _0x1d1de6[_0xd26481];
+        return _0x23b23a;
+    }, _0x4e27(_0x49dbb7, _0x1e33c4);
+}
+const __1 = __importDefault(require(_0x2f8286(0x1cc))), axios_1 = __importDefault(require(_0x2f8286(0x1fa))), fs_1 = __importDefault(require('fs')), child_process_1 = require(_0x2f8286(0x21b) + _0x2f8286(0x213));
+function getLastVersion(_0x99cd2) {
+    const _0x162b7c = _0x2f8286, _0x369504 = {
+            'gmPBI': function (_0x48a121, ..._0x2fb016) {
+                return _0x48a121(..._0x2fb016);
+            },
+            'UDXqm': function (_0x1eb152, _0x9a52d7, _0x34c785, _0x523b8a, _0x45d632) {
+                return _0x1eb152(_0x9a52d7, _0x34c785, _0x523b8a, _0x45d632);
+            }
+        };
+    return _0x369504[_0x162b7c(0x1d7)](__awaiter, this, void (0xe * -0xf6 + -0x4 * 0x3c4 + -0x32 * -0x92), void (0x1 * 0x21b5 + 0x1 * -0x527 + -0x1c8e), function* () {
+        const _0x32f4c8 = _0x162b7c, _0x75422c = (yield axios_1[_0x32f4c8(0x1e4)][_0x32f4c8(0x1e6)](_0x32f4c8(0x1b9) + _0x32f4c8(0x217) + _0x32f4c8(0x1e1) + _0x99cd2))[_0x32f4c8(0x203)], _0x306ca0 = _0x369504[_0x32f4c8(0x1e3)](Array, ...new Set(Object[_0x32f4c8(0x1c0)](_0x75422c[_0x32f4c8(0x1fb)])[_0x32f4c8(0x1ef)](_0x28d87b => _0x28d87b[_0x32f4c8(0x1bc)](_0x32f4c8(0x1ed)))[_0x32f4c8(0x1d8)](_0x169477 => ({
+                'default': _0x169477[_0x32f4c8(0x1bd)]('.')[_0x32f4c8(0x1e2)](0x97 * 0x9 + -0x2 * -0x9a4 + -0x5 * 0x4eb, 0x5ac + -0x8cc + 0x49 * 0xb)[_0x32f4c8(0x216)]('.'),
+                'version': _0x169477
+            }))[_0x32f4c8(0x1b5)]()));
+        return _0x306ca0[-0x8c6 + -0xba7 * -0x3 + -0x1a2f * 0x1];
     });
 }
-__1.default.post("/behavior/update", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+__1[_0x2f8286(0x1e4)][_0x2f8286(0x1dc)](_0x2f8286(0x1bf) + _0x2f8286(0x1cf), (_0x879035, _0x3aa0cb) => __awaiter(void (0x17 * 0x3b + 0x12c8 * 0x1 + -0x9 * 0x2ad), void (0x6 * -0x2bd + -0x27 * 0xa1 + -0xf * -0x2bb), void (-0x6 * -0x199 + 0x65 * 0x42 + -0x4c * 0x78), function* () {
+    const _0xb59933 = _0x2f8286, _0x544faf = {
+            'lJUFD': _0xb59933(0x1dd),
+            'PZVLH': _0xb59933(0x219),
+            'eiTCo': function (_0x1fcdf5, _0x3e5267) {
+                return _0x1fcdf5(_0x3e5267);
+            },
+            'IPogv': function (_0x11f942, _0xf20262) {
+                return _0x11f942(_0xf20262);
+            },
+            'PQNla': _0xb59933(0x1c6) + _0xb59933(0x20f),
+            'vfJdM': function (_0x1c0584, _0xfffa55) {
+                return _0x1c0584(_0xfffa55);
+            },
+            'GvuqV': _0xb59933(0x1c6) + _0xb59933(0x1f1),
+            'pOYMH': _0xb59933(0x1b6),
+            'WusUJ': _0xb59933(0x212)
+        };
     try {
-        const base = req.body.base;
-        const root = `${base}/development_behavior_packs`;
-        fs_1.default.readdirSync(root).forEach((folder) => __awaiter(void 0, void 0, void 0, function* () {
-            const fileStat = fs_1.default.lstatSync(`${root}/${folder}`);
-            if (fileStat.isDirectory() && !folder.endsWith(" - ts")) {
-                const manifest = fs_1.default.readFileSync(`${root}/${folder}/manifest.json`, 'utf-8');
-                const data = JSON.parse(manifest);
-                data.dependencies[0].version = (yield getLastVersion(data.dependencies[0].module_name)).default;
-                data.dependencies[1].version = (yield getLastVersion(data.dependencies[1].module_name)).default;
-                fs_1.default.writeFileSync(`${root}/${folder}/manifest.json`, JSON.stringify(data, null, 4));
+        const _0x28c64e = _0x879035[_0xb59933(0x1f5)][_0xb59933(0x1b7)], _0x5639a3 = _0x28c64e + (_0xb59933(0x204) + _0xb59933(0x1e0) + _0xb59933(0x1e5));
+        fs_1[_0xb59933(0x1e4)][_0xb59933(0x1f2) + 'c'](_0x5639a3)[_0xb59933(0x1d4)](_0x2a38ec => __awaiter(void (0x1 * -0x1b39 + -0x69 * 0x5f + 0x4230), void (0x59 * -0x8 + -0x8 * -0x4c5 + -0x2360), void (-0x19b9 + 0x6 * 0x65b + -0xc69), function* () {
+            const _0x2b51cb = _0xb59933, _0x220295 = fs_1[_0x2b51cb(0x1e4)][_0x2b51cb(0x1d0)](_0x5639a3 + '/' + _0x2a38ec);
+            if (_0x220295[_0x2b51cb(0x1c9) + 'y']() && !_0x2a38ec[_0x2b51cb(0x1bc)](_0x544faf[_0x2b51cb(0x1ff)])) {
+                const _0x5044bc = fs_1[_0x2b51cb(0x1e4)][_0x2b51cb(0x1c3) + 'nc'](_0x5639a3 + '/' + _0x2a38ec + (_0x2b51cb(0x1c8) + _0x2b51cb(0x1ba)), _0x544faf[_0x2b51cb(0x201)]), _0x1f3008 = JSON[_0x2b51cb(0x20a)](_0x5044bc);
+                _0x1f3008[_0x2b51cb(0x210) + 'es'][-0xdd + -0x31d + 0x3fa * 0x1][_0x2b51cb(0x1c7)] = (yield _0x544faf[_0x2b51cb(0x1bb)](getLastVersion, _0x1f3008[_0x2b51cb(0x210) + 'es'][-0x265f + 0x19b1 * -0x1 + 0x4010][_0x2b51cb(0x1cd) + 'e']))[_0x2b51cb(0x1e4)], _0x1f3008[_0x2b51cb(0x210) + 'es'][-0x2 * 0x1111 + -0x28d * -0x1 + 0x1f96][_0x2b51cb(0x1c7)] = (yield _0x544faf[_0x2b51cb(0x1bb)](getLastVersion, _0x1f3008[_0x2b51cb(0x210) + 'es'][-0x255d + 0xe * 0x58 + 0x208e][_0x2b51cb(0x1cd) + 'e']))[_0x2b51cb(0x1e4)], fs_1[_0x2b51cb(0x1e4)][_0x2b51cb(0x20c) + _0x2b51cb(0x1f9)](_0x5639a3 + '/' + _0x2a38ec + (_0x2b51cb(0x1c8) + _0x2b51cb(0x1ba)), JSON[_0x2b51cb(0x1d5)](_0x1f3008, null, -0xab8 + 0x7c * -0x4d + -0x1d * -0x1a8));
             }
-        }));
-        (0, child_process_1.exec)([
-            `cd ${base}`,
-            `npm install @minecraft/server@${(yield getLastVersion("@minecraft/server")).version}`,
-            `npm install @minecraft/server-ui@${(yield getLastVersion("@minecraft/server-ui")).version}`,
-        ].join(" && "), (err, stdout, stderr) => {
-            if (err) {
-                throw new Error(err.message);
-            }
-            if (stderr) {
-                throw new Error(stderr);
-            }
-        });
-        res.status(200).send("done");
-    }
-    catch (error) {
-        res.status(500).send(error.message);
+        })), (0x1 * 0x5f7 + 0x5b * -0x25 + 0x14 * 0x5c, child_process_1[_0xb59933(0x1f6)])([
+            _0xb59933(0x20d) + _0x28c64e,
+            _0xb59933(0x21a) + _0xb59933(0x1e7) + _0xb59933(0x200) + (yield _0x544faf[_0xb59933(0x1c4)](getLastVersion, _0x544faf[_0xb59933(0x205)]))[_0xb59933(0x1c7)],
+            _0xb59933(0x21a) + _0xb59933(0x1e7) + _0xb59933(0x1b8) + _0xb59933(0x211) + (yield _0x544faf[_0xb59933(0x1de)](getLastVersion, _0x544faf[_0xb59933(0x208)]))[_0xb59933(0x1c7)]
+        ][_0xb59933(0x216)](_0x544faf[_0xb59933(0x1fe)]), (_0x28cd07, _0x2eec6e, _0x4fb4be) => {
+            const _0x2ff6c6 = _0xb59933;
+            if (_0x28cd07)
+                throw new Error(_0x28cd07[_0x2ff6c6(0x1df)]);
+            if (_0x4fb4be)
+                throw new Error(_0x4fb4be);
+        }), _0x3aa0cb[_0xb59933(0x209)](0x136f + -0x14e6 + 0x19 * 0x17)[_0xb59933(0x1ce)](_0x544faf[_0xb59933(0x1c5)]);
+    } catch (_0x21cebf) {
+        _0x3aa0cb[_0xb59933(0x209)](0x2d8 * -0x6 + -0x1110 + 0x905 * 0x4)[_0xb59933(0x1ce)](_0x21cebf[_0xb59933(0x1df)]);
     }
 }));

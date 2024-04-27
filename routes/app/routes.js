@@ -1,54 +1,187 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+'use strict';
+var _0xe31281 = _0x33b5;
+(function (_0x2f03c9, _0x424292) {
+    var _0x4c9f63 = _0x33b5, _0x220ef2 = _0x2f03c9();
+    while (!![]) {
+        try {
+            var _0x52c569 = parseInt(_0x4c9f63(0x204)) / (0x107 * -0x1f + -0x12c3 * -0x1 + -0x3 * -0x45d) + parseInt(_0x4c9f63(0x228)) / (0x12a7 + -0x1040 + -0x265) + parseInt(_0x4c9f63(0x227)) / (-0x1 * 0x12dc + 0x407 * 0x7 + 0x4a9 * -0x2) + parseInt(_0x4c9f63(0x1eb)) / (-0x1 * 0x15f3 + 0x1c69 + -0x672) * (-parseInt(_0x4c9f63(0x215)) / (-0x11 * 0xe2 + 0x21f7 + -0x12f0)) + parseInt(_0x4c9f63(0x218)) / (0x1 * 0xa84 + 0x56d * 0x7 + -0x3079) * (-parseInt(_0x4c9f63(0x1fb)) / (-0x29 * 0xc + -0x83 * 0x3b + -0x1e4 * -0x11)) + -parseInt(_0x4c9f63(0x208)) / (-0x65 * -0x62 + 0x7 * -0x12d + -0x1e67) + -parseInt(_0x4c9f63(0x20c)) / (0x261 + -0x1a23 * 0x1 + -0x1 * -0x17cb) * (parseInt(_0x4c9f63(0x1f2)) / (-0x110a * -0x1 + 0x2 * -0xc6d + 0x7da));
+            if (_0x52c569 === _0x424292)
+                break;
+            else
+                _0x220ef2['push'](_0x220ef2['shift']());
+        } catch (_0x4af81e) {
+            _0x220ef2['push'](_0x220ef2['shift']());
+        }
+    }
+}(_0x51ae, -0x5 * -0x4ad59 + 0x56 * -0x10de + 0x1808 * -0x1f));
+function _0x51ae() {
+    var _0x5d953d = [
+        'default',
+        '4474377TvxMnk',
+        '2760352pmXeqq',
+        'Manage\x20Typ',
+        'CIQWT',
+        'udeob',
+        'lcEnK',
+        'BbzAp',
+        'escript\x20Be',
+        '4xULOot',
+        'uiFko',
+        'riErO',
+        'SQJgB',
+        'ault\x20Behav',
+        'ource',
+        'yezhy',
+        '428200nfLLGE',
+        'DCcFH',
+        'Create\x20Beh',
+        'erty',
+        'ior',
+        'manage',
+        'fault',
+        'uscate\x20Beh',
+        'vVBpi',
+        '49isTqtD',
+        '__importDe',
+        'YUFlS',
+        'EFCYM',
+        'escript',
+        'Home',
+        'mVEgh',
+        'Manage\x20Def',
+        'Manage\x20Obf',
+        '129297TcGefU',
+        'BBbaJ',
+        '/home',
+        'manage/obf',
+        '176448PmwJXB',
+        'manage/typ',
+        '/behavior/',
+        'DoFZe',
+        '405TZpUIC',
+        'create',
+        'avior',
+        'WkmJG',
+        'Create\x20Res',
+        '/config',
+        'DwvVr',
+        'uscate',
+        'Nwhji',
+        '122885QBmCOK',
+        '__esModule',
+        'Config',
+        '48732BovGIQ',
+        'bJRNj',
+        'Manage\x20Res',
+        'gLQhR',
+        'havior',
+        'defineProp',
+        'ndybp',
+        'render',
+        '/resource/',
+        'rSuuo',
+        'get',
+        'index',
+        'TndIm',
+        'MfMQU'
+    ];
+    _0x51ae = function () {
+        return _0x5d953d;
+    };
+    return _0x51ae();
+}
+var __importDefault = this && this[_0xe31281(0x1fc) + _0xe31281(0x1f8)] || function (_0x3bfb00) {
+    var _0x2f983e = _0xe31281;
+    return _0x3bfb00 && _0x3bfb00[_0x2f983e(0x216)] ? _0x3bfb00 : { 'default': _0x3bfb00 };
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const __1 = __importDefault(require(".."));
-__1.default.get('/', (req, res) => {
-    res.render('index', {
-        path: "/home",
-        title: "Home"
+Object[_0xe31281(0x21d) + _0xe31281(0x1f5)](exports, _0xe31281(0x216), { 'value': !![] });
+const __1 = __importDefault(require('..'));
+function _0x33b5(_0x31a35d, _0x3f5d35) {
+    var _0x13d36e = _0x51ae();
+    return _0x33b5 = function (_0x118741, _0x1ecb2a) {
+        _0x118741 = _0x118741 - (0x1 * 0x1f5f + -0x2272 + 0x4fe);
+        var _0x175605 = _0x13d36e[_0x118741];
+        return _0x175605;
+    }, _0x33b5(_0x31a35d, _0x3f5d35);
+}
+__1[_0xe31281(0x226)][_0xe31281(0x222)]('/', (_0x5d6a18, _0x7d3ef0) => {
+    var _0x1ec25d = _0xe31281, _0x419c0c = {
+            'bJRNj': _0x1ec25d(0x223),
+            'rSuuo': _0x1ec25d(0x206),
+            'WkmJG': _0x1ec25d(0x200)
+        };
+    _0x7d3ef0[_0x1ec25d(0x21f)](_0x419c0c[_0x1ec25d(0x219)], {
+        'path': _0x419c0c[_0x1ec25d(0x221)],
+        'title': _0x419c0c[_0x1ec25d(0x20f)]
     });
-});
-__1.default.get('/config', (req, res) => {
-    res.render('index', {
-        path: "/config",
-        title: "Config"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x211), (_0x559c91, _0x198283) => {
+    var _0x59806c = _0xe31281, _0x484ebb = {
+            'CIQWT': _0x59806c(0x223),
+            'YUFlS': _0x59806c(0x211),
+            'BBbaJ': _0x59806c(0x217)
+        };
+    _0x198283[_0x59806c(0x21f)](_0x484ebb[_0x59806c(0x22a)], {
+        'path': _0x484ebb[_0x59806c(0x1fd)],
+        'title': _0x484ebb[_0x59806c(0x205)]
     });
-});
-__1.default.get('/resource/create', (req, res) => {
-    res.render('index', {
-        path: "/resource/create",
-        title: "Create Resource"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x220) + _0xe31281(0x20d), (_0x5d7f18, _0x495843) => {
+    var _0x1519b0 = _0xe31281, _0x15e884 = {
+            'TndIm': _0x1519b0(0x223),
+            'DwvVr': _0x1519b0(0x220) + _0x1519b0(0x20d),
+            'uiFko': _0x1519b0(0x210) + _0x1519b0(0x1f0)
+        };
+    _0x495843[_0x1519b0(0x21f)](_0x15e884[_0x1519b0(0x224)], {
+        'path': _0x15e884[_0x1519b0(0x212)],
+        'title': _0x15e884[_0x1519b0(0x1ec)]
     });
-});
-__1.default.get('/resource/manage', (req, res) => {
-    res.render('index', {
-        path: "/resource/manage",
-        title: "Manage Resource"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x220) + _0xe31281(0x1f7), (_0x384bc2, _0x1705d3) => {
+    var _0x539ec2 = _0xe31281, _0xdea7b = {
+            'ndybp': _0x539ec2(0x223),
+            'MfMQU': _0x539ec2(0x220) + _0x539ec2(0x1f7),
+            'gLQhR': _0x539ec2(0x21a) + _0x539ec2(0x1f0)
+        };
+    _0x1705d3[_0x539ec2(0x21f)](_0xdea7b[_0x539ec2(0x21e)], {
+        'path': _0xdea7b[_0x539ec2(0x225)],
+        'title': _0xdea7b[_0x539ec2(0x21b)]
     });
-});
-__1.default.get('/behavior/create', (req, res) => {
-    res.render('index', {
-        path: "/behavior/create",
-        title: "Create Behavior"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x20a) + _0xe31281(0x20d), (_0x4551c8, _0x44882d) => {
+    var _0x2c7c01 = _0xe31281, _0x1288ad = {
+            'vVBpi': _0x2c7c01(0x223),
+            'yezhy': _0x2c7c01(0x20a) + _0x2c7c01(0x20d),
+            'udeob': _0x2c7c01(0x1f4) + _0x2c7c01(0x20e)
+        };
+    _0x44882d[_0x2c7c01(0x21f)](_0x1288ad[_0x2c7c01(0x1fa)], {
+        'path': _0x1288ad[_0x2c7c01(0x1f1)],
+        'title': _0x1288ad[_0x2c7c01(0x22b)]
     });
-});
-__1.default.get('/behavior/manage', (req, res) => {
-    res.render('index', {
-        path: "/behavior/manage",
-        title: "Manage Default Behavior"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x20a) + _0xe31281(0x1f7), (_0x33a664, _0x1940e0) => {
+    var _0x15bd19 = _0xe31281, _0x1dfabf = {
+            'Nwhji': _0x15bd19(0x223),
+            'lcEnK': _0x15bd19(0x20a) + _0x15bd19(0x1f7),
+            'DCcFH': _0x15bd19(0x202) + _0x15bd19(0x1ef) + _0x15bd19(0x1f6)
+        };
+    _0x1940e0[_0x15bd19(0x21f)](_0x1dfabf[_0x15bd19(0x214)], {
+        'path': _0x1dfabf[_0x15bd19(0x22c)],
+        'title': _0x1dfabf[_0x15bd19(0x1f3)]
     });
-});
-__1.default.get('/behavior/manage/obfuscate', (req, res) => {
-    res.render('index', {
-        path: "/behavior/manage/obfuscate",
-        title: "Manage Obfuscate Behavior"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x20a) + _0xe31281(0x207) + _0xe31281(0x213), (_0x38168a, _0x566cbc) => {
+    var _0x1b9d90 = _0xe31281, _0x50725f = {
+            'BbzAp': _0x1b9d90(0x223),
+            'riErO': _0x1b9d90(0x20a) + _0x1b9d90(0x207) + _0x1b9d90(0x213),
+            'EFCYM': _0x1b9d90(0x203) + _0x1b9d90(0x1f9) + _0x1b9d90(0x20e)
+        };
+    _0x566cbc[_0x1b9d90(0x21f)](_0x50725f[_0x1b9d90(0x22d)], {
+        'path': _0x50725f[_0x1b9d90(0x1ed)],
+        'title': _0x50725f[_0x1b9d90(0x1fe)]
     });
-});
-__1.default.get('/behavior/manage/typescript', (req, res) => {
-    res.render('index', {
-        path: "/behavior/manage/typescript",
-        title: "Manage Typescript Behavior"
+}), __1[_0xe31281(0x226)][_0xe31281(0x222)](_0xe31281(0x20a) + _0xe31281(0x209) + _0xe31281(0x1ff), (_0x32d9e0, _0x522a6f) => {
+    var _0x4d0ff7 = _0xe31281, _0x37d5a8 = {
+            'SQJgB': _0x4d0ff7(0x223),
+            'mVEgh': _0x4d0ff7(0x20a) + _0x4d0ff7(0x209) + _0x4d0ff7(0x1ff),
+            'DoFZe': _0x4d0ff7(0x229) + _0x4d0ff7(0x22e) + _0x4d0ff7(0x21c)
+        };
+    _0x522a6f[_0x4d0ff7(0x21f)](_0x37d5a8[_0x4d0ff7(0x1ee)], {
+        'path': _0x37d5a8[_0x4d0ff7(0x201)],
+        'title': _0x37d5a8[_0x4d0ff7(0x20b)]
     });
 });

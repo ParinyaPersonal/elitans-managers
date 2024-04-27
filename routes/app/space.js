@@ -1,63 +1,206 @@
-"use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const __1 = __importDefault(require(".."));
-const fs_1 = __importDefault(require("fs"));
-const axios_1 = __importDefault(require("axios"));
-const adm_zip_1 = __importDefault(require("adm-zip"));
-const functions_1 = require("../functions");
-__1.default.post('/api', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const api = req.body.api;
-    const response = yield axios_1.default.get("https://elitans-api-key.vercel.app/key");
-    const list = JSON.parse((0, functions_1.decryptData)(response.data));
-    res.status(200).send(list.some((item) => item.key === api));
-}));
-__1.default.post('/folder', (req, res) => {
-    const base = req.body.base;
-    const dir = req.body.dir;
-    const folders = fs_1.default.readdirSync(`${base}/${dir}`).filter((file) => {
-        const fileStat = fs_1.default.lstatSync(`${base}/${dir}/${file}`);
-        return fileStat.isDirectory();
-    });
-    res.status(200).send(folders);
-});
-__1.default.post('/icon', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+'use strict';
+const _0x5b0a1b = _0x28f3;
+(function (_0x19cf52, _0x80d3c9) {
+    const _0x334630 = _0x28f3, _0x2fa262 = _0x19cf52();
+    while (!![]) {
+        try {
+            const _0x59408f = -parseInt(_0x334630(0x1e4)) / (-0x42 * 0x3f + -0x127 * 0x1 + 0x106 * 0x11) * (-parseInt(_0x334630(0x1d1)) / (-0x2363 * 0x1 + 0xb59 * 0x2 + 0x1 * 0xcb3)) + -parseInt(_0x334630(0x1e3)) / (-0x1e48 + -0x50 * -0x6d + -0x5 * 0xc1) * (-parseInt(_0x334630(0x1f8)) / (0x57a * 0x4 + -0x1970 + -0x1c6 * -0x2)) + -parseInt(_0x334630(0x20d)) / (0xa26 + -0x695 * -0x5 + -0x2b0a) * (-parseInt(_0x334630(0x1ef)) / (-0x5 * -0xa1 + -0x1b2e + -0x3 * -0x805)) + parseInt(_0x334630(0x1fe)) / (0x456 + -0x6d6 + 0x287) * (parseInt(_0x334630(0x1f2)) / (0x109 + 0x1aec + -0x1bed)) + -parseInt(_0x334630(0x202)) / (0x2 * 0xbe7 + -0x7e2 * -0x1 + 0x1 * -0x1fa7) + -parseInt(_0x334630(0x1d5)) / (-0x249 * 0xc + 0xf67 + 0x7 * 0x1b9) * (-parseInt(_0x334630(0x204)) / (0x1ef1 * -0x1 + -0x1884 + 0xc0 * 0x4a)) + -parseInt(_0x334630(0x1c6)) / (-0x18e3 + -0x464 + -0x1 * -0x1d53);
+            if (_0x59408f === _0x80d3c9)
+                break;
+            else
+                _0x2fa262['push'](_0x2fa262['shift']());
+        } catch (_0x542ca9) {
+            _0x2fa262['push'](_0x2fa262['shift']());
+        }
+    }
+}(_0x495e, 0x2135 * 0x94 + 0x103345 + -0x1 * 0x14abf5));
+function _0x28f3(_0x388936, _0x45c80c) {
+    const _0x539f35 = _0x495e();
+    return _0x28f3 = function (_0x1ae27e, _0x1c0ad6) {
+        _0x1ae27e = _0x1ae27e - (-0x6 * 0x261 + -0x1ead * 0x1 + 0x1 * 0x2eb7);
+        let _0x57345a = _0x539f35[_0x1ae27e];
+        return _0x57345a;
+    }, _0x28f3(_0x388936, _0x45c80c);
+}
+var __awaiter = this && this[_0x5b0a1b(0x206)] || function (_0x1901c7, _0x4e2bf6, _0x1c0fd7, _0x44d1ad) {
+        const _0x166ba1 = _0x5b0a1b, _0x211da5 = {
+                'gLUeJ': function (_0x39732f, _0x2e3149) {
+                    return _0x39732f(_0x2e3149);
+                },
+                'VVLdv': function (_0x5ca4a5, _0x4ddf38) {
+                    return _0x5ca4a5 instanceof _0x4ddf38;
+                },
+                'jLvQw': function (_0x77d75b, _0xf2c8e4) {
+                    return _0x77d75b(_0xf2c8e4);
+                },
+                'UVTzK': _0x166ba1(0x1eb),
+                'oNJGp': function (_0x2fb344, _0x1060de) {
+                    return _0x2fb344(_0x1060de);
+                },
+                'zHYvR': function (_0x158623, _0xe1bb3) {
+                    return _0x158623(_0xe1bb3);
+                }
+            };
+        function _0x4dc90a(_0x46a7ac) {
+            const _0x311b87 = _0x166ba1, _0x534d77 = {
+                    'TCSPY': function (_0x10f980, _0xc5816a) {
+                        const _0x41e9c2 = _0x28f3;
+                        return _0x211da5[_0x41e9c2(0x1f1)](_0x10f980, _0xc5816a);
+                    }
+                };
+            return _0x211da5[_0x311b87(0x1c9)](_0x46a7ac, _0x1c0fd7) ? _0x46a7ac : new _0x1c0fd7(function (_0x47102c) {
+                const _0x3b6bad = _0x311b87;
+                _0x534d77[_0x3b6bad(0x1df)](_0x47102c, _0x46a7ac);
+            });
+        }
+        return new (_0x1c0fd7 || (_0x1c0fd7 = Promise))(function (_0x59b630, _0x77563f) {
+            const _0x499b4f = _0x166ba1, _0x429fa6 = {
+                    'wUVHG': function (_0x52c1db, _0x352b23) {
+                        const _0x273230 = _0x28f3;
+                        return _0x211da5[_0x273230(0x1cc)](_0x52c1db, _0x352b23);
+                    },
+                    'OKPRw': _0x211da5[_0x499b4f(0x1f5)],
+                    'CXngM': function (_0x3a1c88, _0x588ca9) {
+                        const _0x47d60a = _0x499b4f;
+                        return _0x211da5[_0x47d60a(0x1f1)](_0x3a1c88, _0x588ca9);
+                    },
+                    'NrnJf': function (_0x4ee63b, _0x46981b) {
+                        const _0x1438c8 = _0x499b4f;
+                        return _0x211da5[_0x1438c8(0x1f9)](_0x4ee63b, _0x46981b);
+                    }
+                };
+            function _0x5c2f26(_0xc1f45e) {
+                const _0x261aaf = _0x499b4f;
+                try {
+                    _0x211da5[_0x261aaf(0x1f1)](_0x4c4f1b, _0x44d1ad[_0x261aaf(0x1f6)](_0xc1f45e));
+                } catch (_0x2bb01a) {
+                    _0x211da5[_0x261aaf(0x1f1)](_0x77563f, _0x2bb01a);
+                }
+            }
+            function _0x95c52c(_0x26cba0) {
+                const _0x375445 = _0x499b4f;
+                try {
+                    _0x429fa6[_0x375445(0x209)](_0x4c4f1b, _0x44d1ad[_0x429fa6[_0x375445(0x1ea)]](_0x26cba0));
+                } catch (_0x38afb4) {
+                    _0x429fa6[_0x375445(0x209)](_0x77563f, _0x38afb4);
+                }
+            }
+            function _0x4c4f1b(_0x31151c) {
+                const _0x6741a6 = _0x499b4f;
+                _0x31151c[_0x6741a6(0x1ed)] ? _0x429fa6[_0x6741a6(0x1e8)](_0x59b630, _0x31151c[_0x6741a6(0x1fb)]) : _0x429fa6[_0x6741a6(0x1ce)](_0x4dc90a, _0x31151c[_0x6741a6(0x1fb)])[_0x6741a6(0x20e)](_0x5c2f26, _0x95c52c);
+            }
+            _0x211da5[_0x499b4f(0x1e0)](_0x4c4f1b, (_0x44d1ad = _0x44d1ad[_0x499b4f(0x20b)](_0x1901c7, _0x4e2bf6 || []))[_0x499b4f(0x1f6)]());
+        });
+    }, __importDefault = this && this[_0x5b0a1b(0x1d6) + _0x5b0a1b(0x1fc)] || function (_0x290bb3) {
+        const _0x5e721d = _0x5b0a1b;
+        return _0x290bb3 && _0x290bb3[_0x5e721d(0x1e9)] ? _0x290bb3 : { 'default': _0x290bb3 };
+    };
+Object[_0x5b0a1b(0x1d4) + _0x5b0a1b(0x1d7)](exports, _0x5b0a1b(0x1e9), { 'value': !![] });
+const __1 = __importDefault(require('..')), fs_1 = __importDefault(require('fs')), axios_1 = __importDefault(require(_0x5b0a1b(0x1d3))), adm_zip_1 = __importDefault(require(_0x5b0a1b(0x1fa))), functions_1 = require(_0x5b0a1b(0x1e6) + 'ns');
+__1[_0x5b0a1b(0x20a)][_0x5b0a1b(0x1de)](_0x5b0a1b(0x1e7), (_0x16e3ef, _0x311260) => __awaiter(void (0x35 * 0x67 + -0x463 * -0x3 + 0x1 * -0x227c), void (0x139 + 0x1 * -0xaa1 + 0x968), void (0x4 * -0x32b + 0x294 * 0x3 + 0x4f0), function* () {
+    const _0x23f195 = _0x5b0a1b, _0x5eb9df = { 'lekRV': _0x23f195(0x1ee) + _0x23f195(0x1ca) + _0x23f195(0x207) + _0x23f195(0x1cb) }, _0x543f3e = _0x16e3ef[_0x23f195(0x1ff)][_0x23f195(0x1dc)], _0x493f13 = yield axios_1[_0x23f195(0x20a)][_0x23f195(0x208)](_0x5eb9df[_0x23f195(0x1cf)]), _0x52426e = JSON[_0x23f195(0x1c5)]((0x6b * -0x2b + 0x2 * 0x11b3 + -0x116d, functions_1[_0x23f195(0x200) + 'a'])(_0x493f13[_0x23f195(0x1d2)]));
+    _0x311260[_0x23f195(0x1fd)](0x1acc + 0x1 * -0x1229 + -0x7db * 0x1)[_0x23f195(0x20c)](_0x52426e[_0x23f195(0x201)](_0x4bbf74 => _0x4bbf74[_0x23f195(0x1c4)] === _0x543f3e));
+})), __1[_0x5b0a1b(0x20a)][_0x5b0a1b(0x1de)](_0x5b0a1b(0x1cd), (_0x4893d9, _0x1827ab) => {
+    const _0x1f2148 = _0x5b0a1b, _0x281f2f = _0x4893d9[_0x1f2148(0x1ff)][_0x1f2148(0x1e1)], _0xb6f432 = _0x4893d9[_0x1f2148(0x1ff)][_0x1f2148(0x1ec)], _0x3dcf0c = fs_1[_0x1f2148(0x20a)][_0x1f2148(0x1c7) + 'c'](_0x281f2f + '/' + _0xb6f432)[_0x1f2148(0x1f0)](_0x42670c => {
+            const _0x48872d = _0x1f2148, _0x30bd1e = fs_1[_0x48872d(0x20a)][_0x48872d(0x1f3)](_0x281f2f + '/' + _0xb6f432 + '/' + _0x42670c);
+            return _0x30bd1e[_0x48872d(0x1d8) + 'y']();
+        });
+    _0x1827ab[_0x1f2148(0x1fd)](-0x23d * 0xf + 0x1d96 + 0x6f * 0xb)[_0x1f2148(0x20c)](_0x3dcf0c);
+}), __1[_0x5b0a1b(0x20a)][_0x5b0a1b(0x1de)](_0x5b0a1b(0x1f7), (_0x4dbf7c, _0x4e76e9) => __awaiter(void (0x2e * -0x7 + -0x277 * 0x2 + 0x630), void (-0x1135 * 0x2 + 0x45 * 0x1f + 0x1a0f), void (0x2 * -0xa32 + -0x3 * -0x61a + 0x216), function* () {
+    const _0x10923e = _0x5b0a1b;
     try {
-        const base = req.body.base;
-        const dir = req.body.dir;
-        const folder = req.body.folder;
-        const buffer = fs_1.default.readFileSync(`${base}/${dir}/${folder}/pack_icon.png`);
-        res.status(200).send(buffer);
+        const _0x4ecc3b = _0x4dbf7c[_0x10923e(0x1ff)][_0x10923e(0x1e1)], _0x3e8b07 = _0x4dbf7c[_0x10923e(0x1ff)][_0x10923e(0x1ec)], _0x200204 = _0x4dbf7c[_0x10923e(0x1ff)][_0x10923e(0x1d0)], _0x548d00 = fs_1[_0x10923e(0x20a)][_0x10923e(0x203) + 'nc'](_0x4ecc3b + '/' + _0x3e8b07 + '/' + _0x200204 + (_0x10923e(0x1da) + _0x10923e(0x205)));
+        _0x4e76e9[_0x10923e(0x1fd)](0x1efc + -0x1 * 0x21a1 + -0x1 * -0x36d)[_0x10923e(0x20c)](_0x548d00);
+    } catch (_0x50dce6) {
+        _0x4e76e9[_0x10923e(0x1fd)](-0x1586 + 0x5 * 0x1d1 + 0x1 * 0xe01)[_0x10923e(0x20c)](_0x50dce6);
     }
-    catch (error) {
-        res.status(400).send(error);
-    }
-}));
-__1.default.post('/compile', (req, res) => {
-    const type = req.body.type;
-    const base = req.body.base;
-    const dir = req.body.dir;
-    const folder = req.body.folder;
-    const zip = new adm_zip_1.default();
-    zip.addLocalFolder(`${base}/${dir}/${folder}`);
-    zip.writeZip(`${base}/${dir}/${folder}.${type}`);
-    res.status(200).send(`${base}/${dir}/${folder}.${type}`);
+})), __1[_0x5b0a1b(0x20a)][_0x5b0a1b(0x1de)](_0x5b0a1b(0x1d9), (_0x1fe6c8, _0xc27393) => {
+    const _0x5db61e = _0x5b0a1b, _0x288d15 = _0x1fe6c8[_0x5db61e(0x1ff)][_0x5db61e(0x1f4)], _0x39da47 = _0x1fe6c8[_0x5db61e(0x1ff)][_0x5db61e(0x1e1)], _0x4d5479 = _0x1fe6c8[_0x5db61e(0x1ff)][_0x5db61e(0x1ec)], _0x143c34 = _0x1fe6c8[_0x5db61e(0x1ff)][_0x5db61e(0x1d0)], _0x1d23f6 = new adm_zip_1[(_0x5db61e(0x20a))]();
+    _0x1d23f6[_0x5db61e(0x1db) + _0x5db61e(0x1e2)](_0x39da47 + '/' + _0x4d5479 + '/' + _0x143c34), _0x1d23f6[_0x5db61e(0x1dd)](_0x39da47 + '/' + _0x4d5479 + '/' + _0x143c34 + '.' + _0x288d15), _0xc27393[_0x5db61e(0x1fd)](-0x18e6 + 0x2 * -0x7d9 + 0x2960)[_0x5db61e(0x20c)](_0x39da47 + '/' + _0x4d5479 + '/' + _0x143c34 + '.' + _0x288d15);
+}), __1[_0x5b0a1b(0x20a)][_0x5b0a1b(0x1de)](_0x5b0a1b(0x1e5), (_0x5055a8, _0x1b86a6) => {
+    const _0x10f267 = _0x5b0a1b, _0x4960a0 = _0x5055a8[_0x10f267(0x1ff)][_0x10f267(0x1e1)], _0x1eb348 = _0x5055a8[_0x10f267(0x1ff)][_0x10f267(0x1ec)], _0x9f6465 = _0x5055a8[_0x10f267(0x1ff)][_0x10f267(0x1d0)];
+    fs_1[_0x10f267(0x20a)][_0x10f267(0x1c8)](_0x4960a0 + '/' + _0x1eb348 + '/' + _0x9f6465, { 'recursive': !![] }), _0x1b86a6[_0x10f267(0x1fd)](0x682 + -0x1dc3 + 0x803 * 0x3)[_0x10f267(0x20c)]('OK');
 });
-__1.default.post('/delete', (req, res) => {
-    const base = req.body.base;
-    const dir = req.body.dir;
-    const folder = req.body.folder;
-    fs_1.default.rmdirSync(`${base}/${dir}/${folder}`, { recursive: true });
-    res.status(200).send("OK");
-});
+function _0x495e() {
+    const _0x47dfa5 = [
+        'throw',
+        'dir',
+        'done',
+        'https://el',
+        '1014450mqoRmV',
+        'filter',
+        'gLUeJ',
+        '40jpHQsq',
+        'lstatSync',
+        'type',
+        'UVTzK',
+        'next',
+        '/icon',
+        '4YYrtMA',
+        'oNJGp',
+        'adm-zip',
+        'value',
+        'fault',
+        'status',
+        '1675233EAmbOc',
+        'body',
+        'decryptDat',
+        'some',
+        '11290851AtgBCV',
+        'readFileSy',
+        '957nPLPMo',
+        '.png',
+        '__awaiter',
+        'key.vercel',
+        'get',
+        'wUVHG',
+        'default',
+        'apply',
+        'send',
+        '55ieSrBN',
+        'then',
+        'key',
+        'parse',
+        '30038988aEyxDK',
+        'readdirSyn',
+        'rmdirSync',
+        'VVLdv',
+        'itans-api-',
+        '.app/key',
+        'jLvQw',
+        '/folder',
+        'NrnJf',
+        'lekRV',
+        'folder',
+        '1225286EsuhSc',
+        'data',
+        'axios',
+        'defineProp',
+        '81950RqcDgg',
+        '__importDe',
+        'erty',
+        'isDirector',
+        '/compile',
+        '/pack_icon',
+        'addLocalFo',
+        'api',
+        'writeZip',
+        'post',
+        'TCSPY',
+        'zHYvR',
+        'base',
+        'lder',
+        '1022604yKZfZj',
+        '1jkcubv',
+        '/delete',
+        '../functio',
+        '/api',
+        'CXngM',
+        '__esModule',
+        'OKPRw'
+    ];
+    _0x495e = function () {
+        return _0x47dfa5;
+    };
+    return _0x495e();
+}
