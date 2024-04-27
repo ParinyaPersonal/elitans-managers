@@ -1,291 +1,85 @@
-'use strict';
-const _0x56db76 = _0x28cd;
-(function (_0x2f6452, _0x4bed88) {
-    const _0xd85e91 = _0x28cd, _0x3e4208 = _0x2f6452();
-    while (!![]) {
-        try {
-            const _0x86036 = parseInt(_0xd85e91(0xb0)) / (0x302 + 0xed8 + -0x11d9) * (parseInt(_0xd85e91(0x96)) / (0x102f + 0x294 + -0x12c1 * 0x1)) + -parseInt(_0xd85e91(0xba)) / (0x14b3 + 0xec5 + -0x1d * 0x139) + -parseInt(_0xd85e91(0xb4)) / (0x3 * -0xb7d + 0x14be + 0xdbd * 0x1) + parseInt(_0xd85e91(0xc2)) / (-0x21d2 + -0x419 * -0x7 + -0x2c * -0x1e) + parseInt(_0xd85e91(0x87)) / (-0x1 * -0x13ff + 0xc40 * 0x2 + -0x2c79) + -parseInt(_0xd85e91(0xa6)) / (0x11 * 0x239 + -0x1054 + -0x156e) + parseInt(_0xd85e91(0xb2)) / (0xf * -0x4f + -0x1 * -0x892 + -0x3e9) * (parseInt(_0xd85e91(0xd6)) / (-0x1455 + -0x16a * -0x17 + -0xc28));
-            if (_0x86036 === _0x4bed88)
-                break;
-            else
-                _0x3e4208['push'](_0x3e4208['shift']());
-        } catch (_0x3f7c59) {
-            _0x3e4208['push'](_0x3e4208['shift']());
-        }
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const javascript_obfuscator_1 = require("javascript-obfuscator");
+const __1 = __importDefault(require("../.."));
+const fs_1 = __importDefault(require("fs"));
+const functions_1 = require("../../functions");
+function encodeJSON(jsonObject) {
+    const jsonString = JSON.stringify(jsonObject, null, 4);
+    return obfuscateString(jsonString).toString();
+}
+function unicodeEscape(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        const charCode = str.charCodeAt(i);
+        result += "\\u" + ("0000" + charCode.toString(16)).slice(-4);
     }
-}(_0x23c5, -0xef29d + -0x18ff89 + 0x366847));
-var __awaiter = this && this[_0x56db76(0xc9)] || function (_0x130d4b, _0x86a237, _0x480f41, _0x53495c) {
-        const _0x2d15c1 = _0x56db76, _0x31a69c = {
-                'aNVbV': function (_0x17a430, _0x46fce9) {
-                    return _0x17a430(_0x46fce9);
-                },
-                'FFRAb': function (_0x46f8fa, _0xa20637) {
-                    return _0x46f8fa instanceof _0xa20637;
-                },
-                'VcunZ': _0x2d15c1(0xbd),
-                'vbYPt': function (_0x38ae71, _0xc59f74) {
-                    return _0x38ae71(_0xc59f74);
-                }
-            };
-        function _0x57417d(_0x39a1c7) {
-            const _0x267485 = _0x2d15c1;
-            return _0x31a69c[_0x267485(0xce)](_0x39a1c7, _0x480f41) ? _0x39a1c7 : new _0x480f41(function (_0x5a8f8b) {
-                const _0x1e10a7 = _0x267485;
-                _0x31a69c[_0x1e10a7(0xb5)](_0x5a8f8b, _0x39a1c7);
-            });
-        }
-        return new (_0x480f41 || (_0x480f41 = Promise))(function (_0x2fabf6, _0x3ce933) {
-            const _0x2f6828 = _0x2d15c1, _0x65c651 = {
-                    'luWNk': function (_0x4d10a3, _0x3bc3d1) {
-                        const _0x3e095d = _0x28cd;
-                        return _0x31a69c[_0x3e095d(0xb5)](_0x4d10a3, _0x3bc3d1);
-                    }
-                };
-            function _0x4aa9b6(_0x28ac47) {
-                const _0x55f4d3 = _0x28cd;
-                try {
-                    _0x65c651[_0x55f4d3(0xe0)](_0x5d228e, _0x53495c[_0x55f4d3(0xd1)](_0x28ac47));
-                } catch (_0x74b337) {
-                    _0x65c651[_0x55f4d3(0xe0)](_0x3ce933, _0x74b337);
-                }
-            }
-            function _0x46a5bf(_0x37c8f6) {
-                const _0x5bd98b = _0x28cd;
-                try {
-                    _0x31a69c[_0x5bd98b(0xb5)](_0x5d228e, _0x53495c[_0x31a69c[_0x5bd98b(0xd4)]](_0x37c8f6));
-                } catch (_0x55de1e) {
-                    _0x31a69c[_0x5bd98b(0xb5)](_0x3ce933, _0x55de1e);
-                }
-            }
-            function _0x5d228e(_0x48b5a1) {
-                const _0x282440 = _0x28cd;
-                _0x48b5a1[_0x282440(0xb1)] ? _0x31a69c[_0x282440(0xb5)](_0x2fabf6, _0x48b5a1[_0x282440(0xc0)]) : _0x31a69c[_0x282440(0xa8)](_0x57417d, _0x48b5a1[_0x282440(0xc0)])[_0x282440(0x97)](_0x4aa9b6, _0x46a5bf);
-            }
-            _0x31a69c[_0x2f6828(0xa8)](_0x5d228e, (_0x53495c = _0x53495c[_0x2f6828(0x9c)](_0x130d4b, _0x86a237 || []))[_0x2f6828(0xd1)]());
-        });
-    }, __importDefault = this && this[_0x56db76(0xa5) + _0x56db76(0xa1)] || function (_0x5e3fac) {
-        const _0x3f171b = _0x56db76;
-        return _0x5e3fac && _0x5e3fac[_0x3f171b(0xcd)] ? _0x5e3fac : { 'default': _0x5e3fac };
-    };
-function _0x28cd(_0x42c4d6, _0x677b69) {
-    const _0x240a7d = _0x23c5();
-    return _0x28cd = function (_0x2c3667, _0x551733) {
-        _0x2c3667 = _0x2c3667 - (-0x11b5 + 0x1761 + -0x526);
-        let _0x44de0c = _0x240a7d[_0x2c3667];
-        return _0x44de0c;
-    }, _0x28cd(_0x42c4d6, _0x677b69);
+    return result;
 }
-Object[_0x56db76(0xa4) + _0x56db76(0xdf)](exports, _0x56db76(0xcd), { 'value': !![] });
-const javascript_obfuscator_1 = require(_0x56db76(0xd9) + _0x56db76(0xde) + 'r'), __1 = __importDefault(require(_0x56db76(0xaa))), fs_1 = __importDefault(require('fs')), functions_1 = require(_0x56db76(0x8a) + _0x56db76(0xd0));
-function encodeJSON(_0x3c6bd9) {
-    const _0x4f0ee2 = _0x56db76, _0x249e1c = {
-            'TNmql': function (_0x9339d, _0x4577eb) {
-                return _0x9339d(_0x4577eb);
-            }
-        }, _0x37b6eb = JSON[_0x4f0ee2(0xb7)](_0x3c6bd9, null, -0x5bf * -0x1 + -0x230 + -0x38b);
-    return _0x249e1c[_0x4f0ee2(0xc5)](obfuscateString, _0x37b6eb)[_0x4f0ee2(0x89)]();
-}
-function unicodeEscape(_0x1c05c9) {
-    const _0x2103f6 = _0x56db76, _0x11a31f = {
-            'lJkej': function (_0x39427d, _0x42fa4f) {
-                return _0x39427d < _0x42fa4f;
-            },
-            'YKnhn': function (_0xfaca52, _0x217145) {
-                return _0xfaca52 + _0x217145;
-            },
-            'JyqUq': function (_0x9cff54, _0x2e58cf) {
-                return _0x9cff54 + _0x2e58cf;
-            },
-            'UCIvv': _0x2103f6(0xa7)
-        };
-    let _0x11d169 = '';
-    for (let _0x1eefdc = -0x2606 + -0x3e * 0x8f + 0x14 * 0x3a2; _0x11a31f[_0x2103f6(0xda)](_0x1eefdc, _0x1c05c9[_0x2103f6(0xb6)]); _0x1eefdc++) {
-        const _0x8c5e8 = _0x1c05c9[_0x2103f6(0x9e)](_0x1eefdc);
-        _0x11d169 += _0x11a31f[_0x2103f6(0x98)]('\x5cu', _0x11a31f[_0x2103f6(0x99)](_0x11a31f[_0x2103f6(0x9b)], _0x8c5e8[_0x2103f6(0x89)](0x8 * 0x2d1 + 0x420 + -0x1a98))[_0x2103f6(0xdc)](-(0x811 + 0x200c + -0x2819)));
-    }
-    return _0x11d169;
-}
-function obfuscateString(_0x1b8baa) {
-    const _0x2d01df = _0x56db76, _0x5e8b60 = {
-            'EmmTW': function (_0x522acc, _0x50db4c) {
-                return _0x522acc + _0x50db4c;
-            },
-            'aPiSN': function (_0x573a90, _0x59e97e) {
-                return _0x573a90(_0x59e97e);
-            }
-        };
-    return _0x1b8baa[_0x2d01df(0x8c)](/"[^"]*"|'[^']*'/g, _0x4103e9 => {
-        const _0x49eed1 = _0x2d01df, _0x259dc2 = _0x4103e9[_0x49eed1(0x8c)](/["']/g, '');
-        return _0x5e8b60[_0x49eed1(0x8e)](_0x5e8b60[_0x49eed1(0x8e)]('\x22', _0x5e8b60[_0x49eed1(0xbe)](unicodeEscape, _0x259dc2)), '\x22');
+function obfuscateString(str) {
+    return str.replace(/"[^"]*"|'[^']*'/g, (match) => {
+        const cleanString = match.replace(/["']/g, '');
+        return '"' + unicodeEscape(cleanString) + '"';
     });
 }
-function encodeJS(_0x4dbbb1) {
-    const _0x500175 = _0x56db76;
-    return (-0x4bd * 0x1 + -0xa * 0x1ca + 0x3 * 0x78b, javascript_obfuscator_1[_0x500175(0xc3)])(_0x4dbbb1, {
-        'compact': ![],
-        'controlFlowFlattening': !![],
-        'controlFlowFlatteningThreshold': 0x1,
-        'numbersToExpressions': !![],
-        'simplify': !![],
-        'stringArrayShuffle': !![],
-        'splitStrings': !![],
-        'stringArrayThreshold': 0x1
-    })[_0x500175(0x8b) + _0x500175(0x9a)]();
+function encodeJS(code) {
+    return (0, javascript_obfuscator_1.obfuscate)(code, {
+        compact: false,
+        controlFlowFlattening: true,
+        controlFlowFlatteningThreshold: 1,
+        numbersToExpressions: true,
+        simplify: true,
+        stringArrayShuffle: true,
+        splitStrings: true,
+        stringArrayThreshold: 1
+    }).getObfuscatedCode();
 }
-function rootObf(_0x3d99e6, _0x4562d9) {
-    const _0x5156a8 = _0x56db76;
-    return _0x3d99e6[_0x5156a8(0x8c)](_0x5156a8(0xd7) + _0x5156a8(0xa3) + _0x5156a8(0xae) + _0x4562d9 + '/', _0x5156a8(0xd7) + _0x5156a8(0xa3) + _0x5156a8(0xae) + _0x4562d9 + _0x5156a8(0xb8));
+function rootObf(dir, folder) {
+    return dir.replace(`development_behavior_packs/${folder}/`, `development_behavior_packs/${folder} - obf/`);
 }
-__1[_0x56db76(0xd5)][_0x56db76(0x90)](_0x56db76(0xc7) + _0x56db76(0xcc), (_0x52591b, _0x5aedd3) => __awaiter(void (0x31 * 0x62 + -0x1 * -0x1511 + 0x7f7 * -0x5), void (0x69 * -0x26 + -0xd * -0xfb + -0x1 * -0x2d7), void (-0x1032 + 0xd * 0x4c + 0xc56), function* () {
-    const _0x4c6715 = _0x56db76, _0x112b49 = {
-            'PMreu': function (_0x5a09eb, _0x2245d3, _0x107633) {
-                return _0x5a09eb(_0x2245d3, _0x107633);
-            },
-            'OhGQt': _0x4c6715(0xc6),
-            'DBRnZ': function (_0x575620, _0x301228, _0x41432c) {
-                return _0x575620(_0x301228, _0x41432c);
-            },
-            'ySzjW': function (_0x5a3507, _0x3af44a) {
-                return _0x5a3507(_0x3af44a);
-            },
-            'naCWZ': function (_0x7c0742, _0x142d9e) {
-                return _0x7c0742 + _0x142d9e;
-            },
-            'TNTSs': _0x4c6715(0x94),
-            'HkGic': function (_0x416f1, _0x7825f4, _0x1e6ced) {
-                return _0x416f1(_0x7825f4, _0x1e6ced);
-            },
-            'HVZhm': function (_0x70f726, _0x2abf7f) {
-                return _0x70f726 || _0x2abf7f;
-            },
-            'ihMyQ': _0x4c6715(0x92) + _0x4c6715(0xb3) + 'er'
-        };
+__1.default.post("/behavior/encode", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const _0x51bb0f = _0x52591b[_0x4c6715(0xa9)][_0x4c6715(0xca)], _0x1f4fcc = _0x52591b[_0x4c6715(0xa9)][_0x4c6715(0x8f)];
-        if (_0x112b49[_0x4c6715(0xbb)](!_0x51bb0f, !_0x1f4fcc))
-            _0x5aedd3[_0x4c6715(0x86)](0x1f2 * 0xb + 0x20c7 + -0x349d * 0x1)[_0x4c6715(0xd8)](_0x112b49[_0x4c6715(0x9d)]);
-        const _0x32b921 = _0x51bb0f + (_0x4c6715(0xdb) + _0x4c6715(0xc8) + _0x4c6715(0x88)) + _0x1f4fcc;
-        fs_1[_0x4c6715(0xd5)][_0x4c6715(0xac)](_0x32b921 + _0x4c6715(0xaf), { 'recursive': !![] }), yield (0x1b4a + 0x2363 + 0xc89 * -0x5, functions_1[_0x4c6715(0x8d)])(_0x32b921, () => !![], _0x367264 => __awaiter(void (0x1 * -0x1d46 + 0x99b + 0x13 * 0x109), void (0x3 * 0x966 + 0x21f * -0x9 + 0x3f * -0x25), void (0x1 * 0x151a + 0x206c + 0x193 * -0x22), function* () {
-            const _0x33e098 = _0x4c6715, _0x21265d = fs_1[_0x33e098(0xd5)][_0x33e098(0x91) + 'nc'](_0x367264);
-            fs_1[_0x33e098(0xd5)][_0x33e098(0xad) + _0x33e098(0x93)](_0x112b49[_0x33e098(0xd3)](rootObf, _0x367264, _0x1f4fcc), _0x21265d);
-        }), _0x350c7c => __awaiter(void (-0xb * 0x2da + -0x15cf + 0x352d), void (0x338 * -0x8 + -0xf * -0x212 + -0x2a7 * 0x2), void (-0x2 * -0xac9 + 0x1200 + -0x2792), function* () {
-            const _0x3942a4 = _0x4c6715;
-            fs_1[_0x3942a4(0xd5)][_0x3942a4(0xac)](_0x350c7c[_0x3942a4(0x8c)]('/' + _0x1f4fcc + '/', '/' + _0x1f4fcc + _0x3942a4(0xb8)), { 'recursive': !![] });
-        })), yield (0x446 + 0x74 * -0x49 + -0xe67 * -0x2, functions_1[_0x4c6715(0x8d)])(_0x32b921 + _0x4c6715(0xaf), _0x2b67c3 => _0x2b67c3[_0x4c6715(0xbf)](_0x4c6715(0x95)), _0x10611a => __awaiter(void (0x1 * 0x1dfa + 0x16ca + -0x34c4), void (-0x1 * -0x11e9 + -0x2170 + 0x9f * 0x19), void (-0x2 * -0x106 + 0x1 * 0x1a4d + -0x1c59), function* () {
-            const _0x5acce3 = _0x4c6715, _0x274026 = fs_1[_0x5acce3(0xd5)][_0x5acce3(0x91) + 'nc'](_0x10611a, _0x112b49[_0x5acce3(0xbc)]);
-            fs_1[_0x5acce3(0xd5)][_0x5acce3(0xad) + _0x5acce3(0x93)](_0x112b49[_0x5acce3(0xa0)](rootObf, _0x10611a, _0x1f4fcc), _0x112b49[_0x5acce3(0x9f)](encodeJS, _0x274026));
-        }), _0x21db9b => __awaiter(void (-0x2512 + -0x31d * 0xb + 0x4751), void (-0x48f + -0x1 * 0x1ec7 + 0x2356), void (-0x2 * 0xe4a + 0x268f + -0x9fb), function* () {
-            const _0x91a6d = _0x4c6715;
-            fs_1[_0x91a6d(0xd5)][_0x91a6d(0xac)](_0x21db9b[_0x91a6d(0x8c)]('/' + _0x1f4fcc + '/', '/' + _0x1f4fcc + _0x91a6d(0xb8)), { 'recursive': !![] });
-        })), yield (0x1888 * -0x1 + -0x1fb0 + 0x808 * 0x7, functions_1[_0x4c6715(0x8d)])(_0x32b921 + _0x4c6715(0xaf), _0x20c994 => _0x20c994[_0x4c6715(0xbf)](_0x4c6715(0xc1)) && !_0x20c994[_0x4c6715(0xc4)](_0x4c6715(0xcf)), _0x4fb247 => __awaiter(void (0x11c * 0x1a + 0x1 * 0x10fd + -0x2dd5), void (0x1f45 * 0x1 + -0x21de + 0x299), void (-0x2 * 0x71f + 0xd * 0x24b + -0xf91), function* () {
-            const _0x4e61e8 = _0x4c6715;
-            console[_0x4e61e8(0xd2)](_0x112b49[_0x4e61e8(0xdd)](_0x112b49[_0x4e61e8(0xab)], _0x4fb247));
-            const _0x4cf24f = fs_1[_0x4e61e8(0xd5)][_0x4e61e8(0x91) + 'nc'](_0x4fb247, _0x112b49[_0x4e61e8(0xbc)]);
-            fs_1[_0x4e61e8(0xd5)][_0x4e61e8(0xad) + _0x4e61e8(0x93)](_0x112b49[_0x4e61e8(0xb9)](rootObf, _0x4fb247, _0x1f4fcc), _0x112b49[_0x4e61e8(0x9f)](encodeJSON, JSON[_0x4e61e8(0xa2)](_0x4cf24f)));
-        }), _0x1e042b => __awaiter(void (-0x12e3 + 0x1d88 + -0xaa5), void (0x3 * -0x82c + 0x1217 + 0x66d), void (-0x5 * 0x5d1 + -0x1acf + 0x37e4), function* () {
-            const _0x466a07 = _0x4c6715;
-            fs_1[_0x466a07(0xd5)][_0x466a07(0xac)](_0x1e042b[_0x466a07(0x8c)]('/' + _0x1f4fcc + '/', '/' + _0x1f4fcc + _0x466a07(0xb8)), { 'recursive': !![] });
-        })), _0x5aedd3[_0x4c6715(0x86)](0x5 * 0x1fc + 0xf2d + -0x19f * 0xf)[_0x4c6715(0xd8)]('OK');
-    } catch (_0xa47ef9) {
-        console[_0x4c6715(0xd2)](_0xa47ef9), _0x5aedd3[_0x4c6715(0x86)](-0x23f3 + 0x1e60 + 0x787)[_0x4c6715(0xd8)](_0xa47ef9[_0x4c6715(0xcb)]);
+        const base = req.body.base;
+        const folder = req.body.folder;
+        if (!base || !folder)
+            res.status(400).send("Missing base or folder");
+        const root = `${base}/development_behavior_packs/${folder}`;
+        fs_1.default.mkdirSync(`${root} - obf`, { recursive: true });
+        yield (0, functions_1.load)(root, () => true, (path) => __awaiter(void 0, void 0, void 0, function* () {
+            const result = fs_1.default.readFileSync(path);
+            fs_1.default.writeFileSync(rootObf(path, folder), result);
+        }), (dire) => __awaiter(void 0, void 0, void 0, function* () {
+            fs_1.default.mkdirSync(dire.replace(`/${folder}/`, `/${folder} - obf/`), { recursive: true });
+        }));
+        yield (0, functions_1.load)(`${root} - obf`, (file) => file.endsWith('.js'), (path) => __awaiter(void 0, void 0, void 0, function* () {
+            const result = fs_1.default.readFileSync(path, 'utf-8');
+            fs_1.default.writeFileSync(rootObf(path, folder), encodeJS(result));
+        }), (dire) => __awaiter(void 0, void 0, void 0, function* () {
+            fs_1.default.mkdirSync(dire.replace(`/${folder}/`, `/${folder} - obf/`), { recursive: true });
+        }));
+        yield (0, functions_1.load)(`${root} - obf`, (file) => (file.endsWith(".json") && !file.startsWith('manifest')), (path) => __awaiter(void 0, void 0, void 0, function* () {
+            console.log("path: " + path);
+            const result = fs_1.default.readFileSync(path, 'utf-8');
+            fs_1.default.writeFileSync(rootObf(path, folder), encodeJSON(JSON.parse(result)));
+        }), (dire) => __awaiter(void 0, void 0, void 0, function* () {
+            fs_1.default.mkdirSync(dire.replace(`/${folder}/`, `/${folder} - obf/`), { recursive: true });
+        }));
+        res.status(200).send("OK");
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).send(err.message);
     }
 }));
-function _0x23c5() {
-    const _0x48006c = [
-        'status',
-        '10466280broMYz',
-        'r_packs/',
-        'toString',
-        '../../func',
-        'getObfusca',
-        'replace',
-        'load',
-        'EmmTW',
-        'folder',
-        'post',
-        'readFileSy',
-        'Missing\x20ba',
-        'ync',
-        'path:\x20',
-        '.js',
-        '124xakkOz',
-        'then',
-        'YKnhn',
-        'JyqUq',
-        'tedCode',
-        'UCIvv',
-        'apply',
-        'ihMyQ',
-        'charCodeAt',
-        'ySzjW',
-        'DBRnZ',
-        'fault',
-        'parse',
-        't_behavior',
-        'defineProp',
-        '__importDe',
-        '3082940GiIwQZ',
-        '0000',
-        'vbYPt',
-        'body',
-        '../..',
-        'TNTSs',
-        'mkdirSync',
-        'writeFileS',
-        '_packs/',
-        '\x20-\x20obf',
-        '9941omszUC',
-        'done',
-        '1336uRAKQC',
-        'se\x20or\x20fold',
-        '3838192WCeURa',
-        'aNVbV',
-        'length',
-        'stringify',
-        '\x20-\x20obf/',
-        'HkGic',
-        '2495724wsPjmO',
-        'HVZhm',
-        'OhGQt',
-        'throw',
-        'aPiSN',
-        'endsWith',
-        'value',
-        '.json',
-        '1482615VinmSy',
-        'obfuscate',
-        'startsWith',
-        'TNmql',
-        'utf-8',
-        '/behavior/',
-        'nt_behavio',
-        '__awaiter',
-        'base',
-        'message',
-        'encode',
-        '__esModule',
-        'FFRAb',
-        'manifest',
-        'tions',
-        'next',
-        'log',
-        'PMreu',
-        'VcunZ',
-        'default',
-        '28152lACMzl',
-        'developmen',
-        'send',
-        'javascript',
-        'lJkej',
-        '/developme',
-        'slice',
-        'naCWZ',
-        '-obfuscato',
-        'erty',
-        'luWNk'
-    ];
-    _0x23c5 = function () {
-        return _0x48006c;
-    };
-    return _0x23c5();
-}

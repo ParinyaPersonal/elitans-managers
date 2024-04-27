@@ -1,182 +1,63 @@
-'use strict';
-function _0x316b() {
-    const _0x4edd3b = [
-        '2769171kdfxAO',
-        '2663302GWcFDg',
-        '.app/key',
-        'isDirector',
-        'kMhwQ',
-        'fppxZ',
-        '__awaiter',
-        'axios',
-        'next',
-        '2619WVnpew',
-        'cuOgj',
-        '666tXqPlC',
-        'fault',
-        'data',
-        'some',
-        'done',
-        'then',
-        'key',
-        '1036887NYErdI',
-        'https://el',
-        'Kirzp',
-        'filter',
-        'readFileSy',
-        'defineProp',
-        'itans-api-',
-        'lstatSync',
-        '665475CEaAzZ',
-        'hPBIb',
-        'rmdirSync',
-        'NGsJC',
-        'adm-zip',
-        '/compile',
-        'lder',
-        'body',
-        '/pack_icon',
-        'throw',
-        'parse',
-        'default',
-        '/api',
-        'folder',
-        'key.vercel',
-        'readdirSyn',
-        'send',
-        'erty',
-        '__importDe',
-        '../functio',
-        'writeZip',
-        '.png',
-        'get',
-        'hLjCF',
-        '/icon',
-        '__esModule',
-        'api',
-        '/folder',
-        'decryptDat',
-        'apply',
-        '809560qKNSDt',
-        '23376QGpAKr',
-        'value',
-        'base',
-        'status',
-        'post',
-        'dir',
-        '/delete',
-        '48713NmMzFB',
-        'type',
-        'addLocalFo',
-        'XyfRQ'
-    ];
-    _0x316b = function () {
-        return _0x4edd3b;
-    };
-    return _0x316b();
-}
-const _0x3dff16 = _0x351a;
-(function (_0x30f6a5, _0x1c5da9) {
-    const _0x53231a = _0x351a, _0x5732e3 = _0x30f6a5();
-    while (!![]) {
-        try {
-            const _0x300972 = parseInt(_0x53231a(0xcb)) / (0x1e3f + -0x31 * -0x13 + -0xb4b * 0x3) + -parseInt(_0x53231a(0xfe)) / (-0xa3 * 0x3a + 0x3 * 0x98b + 0x2c5 * 0x3) + -parseInt(_0x53231a(0xfd)) / (0x1170 + -0x2bb * 0xb + -0x64e * -0x2) + parseInt(_0x53231a(0xf1)) / (0x5e * -0x1 + 0x1f1e * -0x1 + 0x1f80) + parseInt(_0x53231a(0xd3)) / (0xe74 + 0x3a2 * 0x4 + 0x1 * -0x1cf7) + parseInt(_0x53231a(0x108)) / (-0x2 * -0x939 + -0x1 * 0x1612 + 0x3a6) * (parseInt(_0x53231a(0xf9)) / (-0x89c + 0x1cce + -0x142b * 0x1)) + parseInt(_0x53231a(0xf2)) / (0x28 * 0x5b + 0xa * 0x67 + 0x9 * -0x206) * (parseInt(_0x53231a(0x106)) / (-0x1787 + -0x1d * 0x49 + 0x1fd5));
-            if (_0x300972 === _0x1c5da9)
-                break;
-            else
-                _0x5732e3['push'](_0x5732e3['shift']());
-        } catch (_0x1d5b48) {
-            _0x5732e3['push'](_0x5732e3['shift']());
-        }
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = __importDefault(require(".."));
+const fs_1 = __importDefault(require("fs"));
+const axios_1 = __importDefault(require("axios"));
+const adm_zip_1 = __importDefault(require("adm-zip"));
+const functions_1 = require("../functions");
+__1.default.post('/api', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const api = req.body.api;
+    const response = yield axios_1.default.get("https://elitans-api-key.vercel.app/key");
+    const list = JSON.parse((0, functions_1.decryptData)(response.data));
+    res.status(200).send(list.some((item) => item.key === api));
+}));
+__1.default.post('/folder', (req, res) => {
+    const base = req.body.base;
+    const dir = req.body.dir;
+    const folders = fs_1.default.readdirSync(`${base}/${dir}`).filter((file) => {
+        const fileStat = fs_1.default.lstatSync(`${base}/${dir}/${file}`);
+        return fileStat.isDirectory();
+    });
+    res.status(200).send(folders);
+});
+__1.default.post('/icon', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const base = req.body.base;
+        const dir = req.body.dir;
+        const folder = req.body.folder;
+        const buffer = fs_1.default.readFileSync(`${base}/${dir}/${folder}/pack_icon.png`);
+        res.status(200).send(buffer);
     }
-}(_0x316b, -0x1f * 0xa151 + 0x17 * -0x21b5 + 0x20b * 0x1093));
-var __awaiter = this && this[_0x3dff16(0x103)] || function (_0x35ca44, _0x1ff576, _0xeb94c3, _0x4836f4) {
-        const _0x3fac4e = _0x3dff16, _0x54694a = {
-                'Kirzp': function (_0x3a2a7f, _0x32941) {
-                    return _0x3a2a7f(_0x32941);
-                },
-                'NGsJC': function (_0x1a4c74, _0x4c1457) {
-                    return _0x1a4c74 instanceof _0x4c1457;
-                },
-                'hLjCF': _0x3fac4e(0xdc),
-                'XyfRQ': function (_0x497d84, _0x8effc3) {
-                    return _0x497d84(_0x8effc3);
-                },
-                'kMhwQ': function (_0x26bcb4, _0x597108) {
-                    return _0x26bcb4(_0x597108);
-                }
-            };
-        function _0x9affd8(_0x2a39d5) {
-            const _0x484dee = _0x3fac4e, _0x36f871 = {
-                    'cuOgj': function (_0x4e0c3b, _0x1c5195) {
-                        const _0xa488f7 = _0x351a;
-                        return _0x54694a[_0xa488f7(0xcd)](_0x4e0c3b, _0x1c5195);
-                    }
-                };
-            return _0x54694a[_0x484dee(0xd6)](_0x2a39d5, _0xeb94c3) ? _0x2a39d5 : new _0xeb94c3(function (_0x138400) {
-                const _0x134312 = _0x484dee;
-                _0x36f871[_0x134312(0x107)](_0x138400, _0x2a39d5);
-            });
-        }
-        return new (_0xeb94c3 || (_0xeb94c3 = Promise))(function (_0xe6f576, _0x5105c0) {
-            const _0x110aaf = _0x3fac4e, _0x432065 = {
-                    'fppxZ': function (_0x5be36f, _0x3a99fc) {
-                        const _0x49b3c9 = _0x351a;
-                        return _0x54694a[_0x49b3c9(0x101)](_0x5be36f, _0x3a99fc);
-                    }
-                };
-            function _0x268c28(_0x6ad9e9) {
-                const _0x383785 = _0x351a;
-                try {
-                    _0x54694a[_0x383785(0xcd)](_0x572fb0, _0x4836f4[_0x383785(0x105)](_0x6ad9e9));
-                } catch (_0x2bcea4) {
-                    _0x54694a[_0x383785(0xcd)](_0x5105c0, _0x2bcea4);
-                }
-            }
-            function _0x179a8f(_0x5b11d4) {
-                const _0x590d6d = _0x351a;
-                try {
-                    _0x54694a[_0x590d6d(0xcd)](_0x572fb0, _0x4836f4[_0x54694a[_0x590d6d(0xea)]](_0x5b11d4));
-                } catch (_0x4ba7d7) {
-                    _0x54694a[_0x590d6d(0xfc)](_0x5105c0, _0x4ba7d7);
-                }
-            }
-            function _0x572fb0(_0x69cc60) {
-                const _0x1aaa31 = _0x351a;
-                _0x69cc60[_0x1aaa31(0xc8)] ? _0x432065[_0x1aaa31(0x102)](_0xe6f576, _0x69cc60[_0x1aaa31(0xf3)]) : _0x432065[_0x1aaa31(0x102)](_0x9affd8, _0x69cc60[_0x1aaa31(0xf3)])[_0x1aaa31(0xc9)](_0x268c28, _0x179a8f);
-            }
-            _0x54694a[_0x110aaf(0x101)](_0x572fb0, (_0x4836f4 = _0x4836f4[_0x110aaf(0xf0)](_0x35ca44, _0x1ff576 || []))[_0x110aaf(0x105)]());
-        });
-    }, __importDefault = this && this[_0x3dff16(0xe5) + _0x3dff16(0x109)] || function (_0x16f9e0) {
-        const _0x429313 = _0x3dff16;
-        return _0x16f9e0 && _0x16f9e0[_0x429313(0xec)] ? _0x16f9e0 : { 'default': _0x16f9e0 };
-    };
-function _0x351a(_0x344996, _0x1be399) {
-    const _0x2a52cd = _0x316b();
-    return _0x351a = function (_0x1c2200, _0x3c84e4) {
-        _0x1c2200 = _0x1c2200 - (0x3 * 0x465 + 0x1 * -0x2103 + 0x2 * 0xa4e);
-        let _0x4ee828 = _0x2a52cd[_0x1c2200];
-        return _0x4ee828;
-    }, _0x351a(_0x344996, _0x1be399);
-}
-Object[_0x3dff16(0xd0) + _0x3dff16(0xe4)](exports, _0x3dff16(0xec), { 'value': !![] });
-const __1 = __importDefault(require('..')), fs_1 = __importDefault(require('fs')), axios_1 = __importDefault(require(_0x3dff16(0x104))), adm_zip_1 = __importDefault(require(_0x3dff16(0xd7))), functions_1 = require(_0x3dff16(0xe6) + 'ns');
-__1[_0x3dff16(0xde)][_0x3dff16(0xf6)](_0x3dff16(0xdf), (_0x4c2093, _0x342809) => __awaiter(void (-0x1ba9 * 0x1 + -0x256e * -0x1 + -0x9c5), void (0x1 * -0x185f + 0xa4d + 0xe12), void (0x21bc * -0x1 + 0x1 * -0x1e82 + 0x403e), function* () {
-    const _0xe70aa1 = _0x3dff16, _0x446f4b = { 'hPBIb': _0xe70aa1(0xcc) + _0xe70aa1(0xd1) + _0xe70aa1(0xe1) + _0xe70aa1(0xff) }, _0x89b90 = _0x4c2093[_0xe70aa1(0xda)][_0xe70aa1(0xed)], _0x8d3838 = yield axios_1[_0xe70aa1(0xde)][_0xe70aa1(0xe9)](_0x446f4b[_0xe70aa1(0xd4)]), _0x39ab0c = JSON[_0xe70aa1(0xdd)]((-0x12c8 + 0xab * 0x21 + 0x5 * -0xa7, functions_1[_0xe70aa1(0xef) + 'a'])(_0x8d3838[_0xe70aa1(0x10a)]));
-    _0x342809[_0xe70aa1(0xf5)](0x1 * -0x200e + 0x10b * 0x11 + 0xf1b)[_0xe70aa1(0xe3)](_0x39ab0c[_0xe70aa1(0x10b)](_0x1f6e99 => _0x1f6e99[_0xe70aa1(0xca)] === _0x89b90));
-})), __1[_0x3dff16(0xde)][_0x3dff16(0xf6)](_0x3dff16(0xee), (_0x4ad153, _0xab74ae) => {
-    const _0x1931a9 = _0x3dff16, _0xcfa73e = _0x4ad153[_0x1931a9(0xda)][_0x1931a9(0xf4)], _0x10b261 = _0x4ad153[_0x1931a9(0xda)][_0x1931a9(0xf7)], _0x29b3f6 = fs_1[_0x1931a9(0xde)][_0x1931a9(0xe2) + 'c'](_0xcfa73e + '/' + _0x10b261)[_0x1931a9(0xce)](_0x35104c => {
-            const _0x287753 = _0x1931a9, _0x13a430 = fs_1[_0x287753(0xde)][_0x287753(0xd2)](_0xcfa73e + '/' + _0x10b261 + '/' + _0x35104c);
-            return _0x13a430[_0x287753(0x100) + 'y']();
-        });
-    _0xab74ae[_0x1931a9(0xf5)](0x25d1 + -0x8d4 + -0x1c35)[_0x1931a9(0xe3)](_0x29b3f6);
-}), __1[_0x3dff16(0xde)][_0x3dff16(0xf6)](_0x3dff16(0xeb), (_0x7b3bbc, _0x1917fd) => {
-    const _0x1f5ba3 = _0x3dff16, _0xdcdfee = _0x7b3bbc[_0x1f5ba3(0xda)][_0x1f5ba3(0xf4)], _0x387cd7 = _0x7b3bbc[_0x1f5ba3(0xda)][_0x1f5ba3(0xf7)], _0x40662a = _0x7b3bbc[_0x1f5ba3(0xda)][_0x1f5ba3(0xe0)], _0x3e3ce2 = fs_1[_0x1f5ba3(0xde)][_0x1f5ba3(0xcf) + 'nc'](_0xdcdfee + '/' + _0x387cd7 + '/' + _0x40662a + (_0x1f5ba3(0xdb) + _0x1f5ba3(0xe8)));
-    _0x1917fd[_0x1f5ba3(0xf5)](-0x1ac2 * 0x1 + -0xacc * -0x2 + 0x1 * 0x5f2)[_0x1f5ba3(0xe3)](_0x3e3ce2);
-}), __1[_0x3dff16(0xde)][_0x3dff16(0xf6)](_0x3dff16(0xd8), (_0x120df6, _0x2a9b52) => {
-    const _0xdd0dfb = _0x3dff16, _0x2f2d73 = _0x120df6[_0xdd0dfb(0xda)][_0xdd0dfb(0xfa)], _0x278a1e = _0x120df6[_0xdd0dfb(0xda)][_0xdd0dfb(0xf4)], _0x5e7538 = _0x120df6[_0xdd0dfb(0xda)][_0xdd0dfb(0xf7)], _0x4bb0cb = _0x120df6[_0xdd0dfb(0xda)][_0xdd0dfb(0xe0)], _0x5c08b2 = new adm_zip_1[(_0xdd0dfb(0xde))]();
-    _0x5c08b2[_0xdd0dfb(0xfb) + _0xdd0dfb(0xd9)](_0x278a1e + '/' + _0x5e7538 + '/' + _0x4bb0cb), _0x5c08b2[_0xdd0dfb(0xe7)](_0x278a1e + '/' + _0x5e7538 + '/' + _0x4bb0cb + '.' + _0x2f2d73), _0x2a9b52[_0xdd0dfb(0xf5)](-0x2569 + -0x866 * -0x4 + 0x499)[_0xdd0dfb(0xe3)](_0x278a1e + '/' + _0x5e7538 + '/' + _0x4bb0cb + '.' + _0x2f2d73);
-}), __1[_0x3dff16(0xde)][_0x3dff16(0xf6)](_0x3dff16(0xf8), (_0x28841e, _0x31d263) => {
-    const _0x5cbe6f = _0x3dff16, _0x31f3a8 = _0x28841e[_0x5cbe6f(0xda)][_0x5cbe6f(0xf4)], _0x5e9fb4 = _0x28841e[_0x5cbe6f(0xda)][_0x5cbe6f(0xf7)], _0x29bc3b = _0x28841e[_0x5cbe6f(0xda)][_0x5cbe6f(0xe0)];
-    fs_1[_0x5cbe6f(0xde)][_0x5cbe6f(0xd5)](_0x31f3a8 + '/' + _0x5e9fb4 + '/' + _0x29bc3b, { 'recursive': !![] }), _0x31d263[_0x5cbe6f(0xf5)](-0x12d1 * 0x1 + 0xd5f + 0x63a)[_0x5cbe6f(0xe3)]('OK');
+    catch (error) {
+        res.status(400).send(error);
+    }
+}));
+__1.default.post('/compile', (req, res) => {
+    const type = req.body.type;
+    const base = req.body.base;
+    const dir = req.body.dir;
+    const folder = req.body.folder;
+    const zip = new adm_zip_1.default();
+    zip.addLocalFolder(`${base}/${dir}/${folder}`);
+    zip.writeZip(`${base}/${dir}/${folder}.${type}`);
+    res.status(200).send(`${base}/${dir}/${folder}.${type}`);
+});
+__1.default.post('/delete', (req, res) => {
+    const base = req.body.base;
+    const dir = req.body.dir;
+    const folder = req.body.folder;
+    fs_1.default.rmdirSync(`${base}/${dir}/${folder}`, { recursive: true });
+    res.status(200).send("OK");
 });

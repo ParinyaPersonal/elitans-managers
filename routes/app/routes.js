@@ -1,187 +1,54 @@
-'use strict';
-function _0x2be7(_0x4822eb, _0x363eba) {
-    var _0x497124 = _0x3ae8();
-    return _0x2be7 = function (_0x443157, _0x70b047) {
-        _0x443157 = _0x443157 - (-0x2 * 0x1184 + 0x25dd * 0x1 + -0x236 * 0x1);
-        var _0x16e0c4 = _0x497124[_0x443157];
-        return _0x16e0c4;
-    }, _0x2be7(_0x4822eb, _0x363eba);
-}
-var _0x519c62 = _0x2be7;
-(function (_0x577148, _0x2e95e2) {
-    var _0x289be5 = _0x2be7, _0x56a49b = _0x577148();
-    while (!![]) {
-        try {
-            var _0x4d73fb = parseInt(_0x289be5(0xbd)) / (-0x1 * -0xec3 + -0x30 * 0x39 + 0x2 * -0x209) + parseInt(_0x289be5(0xc8)) / (-0x1775 * -0x1 + -0xf2 * 0x13 + -0x119 * 0x5) * (-parseInt(_0x289be5(0xc6)) / (0x1b7e + -0x3ec + -0x178f)) + parseInt(_0x289be5(0xa9)) / (0x7d * 0x19 + 0x8dc * -0x3 + 0xe63 * 0x1) * (-parseInt(_0x289be5(0xa3)) / (-0x5e2 * 0x6 + 0x66d * 0x3 + 0x100a)) + parseInt(_0x289be5(0xd9)) / (-0x2 * -0x3f3 + 0x5a7 * 0x4 + 0x79f * -0x4) + parseInt(_0x289be5(0xcc)) / (-0x1 * -0x1c35 + -0x3d * 0x89 + 0x477) + parseInt(_0x289be5(0xce)) / (0x1fb1 + 0x24c2 + -0x1 * 0x446b) * (-parseInt(_0x289be5(0xa7)) / (-0x19f + -0x1c * 0x161 + -0x35b * -0xc)) + parseInt(_0x289be5(0xb6)) / (-0xd78 * -0x2 + 0x697 * -0x4 + -0x8a);
-            if (_0x4d73fb === _0x2e95e2)
-                break;
-            else
-                _0x56a49b['push'](_0x56a49b['shift']());
-        } catch (_0x42402f) {
-            _0x56a49b['push'](_0x56a49b['shift']());
-        }
-    }
-}(_0x3ae8, -0x5 * 0x4904 + -0x5547f + -0x65189 * -0x2));
-function _0x3ae8() {
-    var _0x344593 = [
-        '__esModule',
-        'uhHbK',
-        'unMBh',
-        '2668290TEsqHu',
-        'defineProp',
-        'index',
-        'manage/obf',
-        'escript\x20Be',
-        'uscate',
-        'Manage\x20Typ',
-        'uscate\x20Beh',
-        '/home',
-        'CsoXc',
-        'FbMnA',
-        'Create\x20Beh',
-        'manage/typ',
-        'kIFZF',
-        '77410zltVUx',
-        'manage',
-        'aetfp',
-        '__importDe',
-        '3068073nkSglk',
-        '/config',
-        '96IoRjyL',
-        'EYWlq',
-        'AjRYy',
-        'havior',
-        'Home',
-        'render',
-        'iMrCc',
-        'create',
-        'ault\x20Behav',
-        'Xmlbm',
-        'Manage\x20Res',
-        'kPNdO',
-        'RvhkY',
-        '6880550nRWJBe',
-        'default',
-        'escript',
-        'erty',
-        'ource',
-        'xSwzm',
-        'Famyb',
-        '60063bZXGPc',
-        'Create\x20Res',
-        'zdDQi',
-        'kwVzj',
-        'fault',
-        '/behavior/',
-        'eWeDp',
-        'WdAKY',
-        'mAvms',
-        '17733mecusD',
-        'gQwqH',
-        '82QExBeD',
-        '/resource/',
-        'Config',
-        'ior',
-        '3418009lnkzaJ',
-        'get',
-        '16NoOZxO',
-        'Manage\x20Def',
-        'avior',
-        'sqxQY',
-        'qyFBO',
-        'LrQyo',
-        'VrgrF',
-        'Manage\x20Obf'
-    ];
-    _0x3ae8 = function () {
-        return _0x344593;
-    };
-    return _0x3ae8();
-}
-var __importDefault = this && this[_0x519c62(0xa6) + _0x519c62(0xc1)] || function (_0x447e40) {
-    var _0x54845b = _0x519c62;
-    return _0x447e40 && _0x447e40[_0x54845b(0xd6)] ? _0x447e40 : { 'default': _0x447e40 };
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-Object[_0x519c62(0xda) + _0x519c62(0xb9)](exports, _0x519c62(0xd6), { 'value': !![] });
-const __1 = __importDefault(require('..'));
-__1[_0x519c62(0xb7)][_0x519c62(0xcd)]('/', (_0x66df82, _0x8ff642) => {
-    var _0x148695 = _0x519c62, _0x155c0f = {
-            'FbMnA': _0x148695(0xdb),
-            'WdAKY': _0x148695(0xe1),
-            'mAvms': _0x148695(0xad)
-        };
-    _0x8ff642[_0x148695(0xae)](_0x155c0f[_0x148695(0x9f)], {
-        'path': _0x155c0f[_0x148695(0xc4)],
-        'title': _0x155c0f[_0x148695(0xc5)]
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = __importDefault(require(".."));
+__1.default.get('/', (req, res) => {
+    res.render('index', {
+        path: "/home",
+        title: "Home"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xa8), (_0x2dce29, _0x1fe965) => {
-    var _0x245365 = _0x519c62, _0x184884 = {
-            'xSwzm': _0x245365(0xdb),
-            'iMrCc': _0x245365(0xa8),
-            'sqxQY': _0x245365(0xca)
-        };
-    _0x1fe965[_0x245365(0xae)](_0x184884[_0x245365(0xbb)], {
-        'path': _0x184884[_0x245365(0xaf)],
-        'title': _0x184884[_0x245365(0xd1)]
+});
+__1.default.get('/config', (req, res) => {
+    res.render('index', {
+        path: "/config",
+        title: "Config"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xc9) + _0x519c62(0xb0), (_0x157c0b, _0x3f82fc) => {
-    var _0x3de75f = _0x519c62, _0x3f8980 = {
-            'eWeDp': _0x3de75f(0xdb),
-            'Famyb': _0x3de75f(0xc9) + _0x3de75f(0xb0),
-            'EYWlq': _0x3de75f(0xbe) + _0x3de75f(0xba)
-        };
-    _0x3f82fc[_0x3de75f(0xae)](_0x3f8980[_0x3de75f(0xc3)], {
-        'path': _0x3f8980[_0x3de75f(0xbc)],
-        'title': _0x3f8980[_0x3de75f(0xaa)]
+});
+__1.default.get('/resource/create', (req, res) => {
+    res.render('index', {
+        path: "/resource/create",
+        title: "Create Resource"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xc9) + _0x519c62(0xa4), (_0x123112, _0x1c585d) => {
-    var _0x50ea95 = _0x519c62, _0x13610c = {
-            'gQwqH': _0x50ea95(0xdb),
-            'Xmlbm': _0x50ea95(0xc9) + _0x50ea95(0xa4),
-            'kPNdO': _0x50ea95(0xb3) + _0x50ea95(0xba)
-        };
-    _0x1c585d[_0x50ea95(0xae)](_0x13610c[_0x50ea95(0xc7)], {
-        'path': _0x13610c[_0x50ea95(0xb2)],
-        'title': _0x13610c[_0x50ea95(0xb4)]
+});
+__1.default.get('/resource/manage', (req, res) => {
+    res.render('index', {
+        path: "/resource/manage",
+        title: "Manage Resource"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xc2) + _0x519c62(0xb0), (_0xe8192, _0x4a2971) => {
-    var _0x1865ec = _0x519c62, _0x1a0ad6 = {
-            'LrQyo': _0x1865ec(0xdb),
-            'VrgrF': _0x1865ec(0xc2) + _0x1865ec(0xb0),
-            'CsoXc': _0x1865ec(0xa0) + _0x1865ec(0xd0)
-        };
-    _0x4a2971[_0x1865ec(0xae)](_0x1a0ad6[_0x1865ec(0xd3)], {
-        'path': _0x1a0ad6[_0x1865ec(0xd4)],
-        'title': _0x1a0ad6[_0x1865ec(0xe2)]
+});
+__1.default.get('/behavior/create', (req, res) => {
+    res.render('index', {
+        path: "/behavior/create",
+        title: "Create Behavior"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xc2) + _0x519c62(0xa4), (_0x449c88, _0x13fe3c) => {
-    var _0x1e756a = _0x519c62, _0x49a068 = {
-            'AjRYy': _0x1e756a(0xdb),
-            'zdDQi': _0x1e756a(0xc2) + _0x1e756a(0xa4),
-            'unMBh': _0x1e756a(0xcf) + _0x1e756a(0xb1) + _0x1e756a(0xcb)
-        };
-    _0x13fe3c[_0x1e756a(0xae)](_0x49a068[_0x1e756a(0xab)], {
-        'path': _0x49a068[_0x1e756a(0xbf)],
-        'title': _0x49a068[_0x1e756a(0xd8)]
+});
+__1.default.get('/behavior/manage', (req, res) => {
+    res.render('index', {
+        path: "/behavior/manage",
+        title: "Manage Default Behavior"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xc2) + _0x519c62(0xdc) + _0x519c62(0xde), (_0x1e5a39, _0x49469c) => {
-    var _0x20ebae = _0x519c62, _0x2f3ba7 = {
-            'kwVzj': _0x20ebae(0xdb),
-            'qyFBO': _0x20ebae(0xc2) + _0x20ebae(0xdc) + _0x20ebae(0xde),
-            'uhHbK': _0x20ebae(0xd5) + _0x20ebae(0xe0) + _0x20ebae(0xd0)
-        };
-    _0x49469c[_0x20ebae(0xae)](_0x2f3ba7[_0x20ebae(0xc0)], {
-        'path': _0x2f3ba7[_0x20ebae(0xd2)],
-        'title': _0x2f3ba7[_0x20ebae(0xd7)]
+});
+__1.default.get('/behavior/manage/obfuscate', (req, res) => {
+    res.render('index', {
+        path: "/behavior/manage/obfuscate",
+        title: "Manage Obfuscate Behavior"
     });
-}), __1[_0x519c62(0xb7)][_0x519c62(0xcd)](_0x519c62(0xc2) + _0x519c62(0xa1) + _0x519c62(0xb8), (_0xb04626, _0x94b4de) => {
-    var _0x3d1f83 = _0x519c62, _0x321c20 = {
-            'RvhkY': _0x3d1f83(0xdb),
-            'aetfp': _0x3d1f83(0xc2) + _0x3d1f83(0xa1) + _0x3d1f83(0xb8),
-            'kIFZF': _0x3d1f83(0xdf) + _0x3d1f83(0xdd) + _0x3d1f83(0xac)
-        };
-    _0x94b4de[_0x3d1f83(0xae)](_0x321c20[_0x3d1f83(0xb5)], {
-        'path': _0x321c20[_0x3d1f83(0xa5)],
-        'title': _0x321c20[_0x3d1f83(0xa2)]
+});
+__1.default.get('/behavior/manage/typescript', (req, res) => {
+    res.render('index', {
+        path: "/behavior/manage/typescript",
+        title: "Manage Typescript Behavior"
     });
 });

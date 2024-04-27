@@ -1,271 +1,63 @@
-'use strict';
-function _0x3c2e(_0x5a7bdd, _0x51f869) {
-    const _0x54780b = _0x3e52();
-    return _0x3c2e = function (_0x5d880e, _0x320347) {
-        _0x5d880e = _0x5d880e - (0xd * -0x16a + -0x1 * 0x210b + -0x60 * -0x8b);
-        let _0x35c2a7 = _0x54780b[_0x5d880e];
-        return _0x35c2a7;
-    }, _0x3c2e(_0x5a7bdd, _0x51f869);
-}
-function _0x3e52() {
-    const _0xecfc95 = [
-        'value',
-        '\x20-\x20ts',
-        '../..',
-        '255213aMQEuX',
-        'unpeI',
-        'post',
-        '__esModule',
-        '9507003DFxqnO',
-        'base',
-        '/server',
-        'versions',
-        'readFileSy',
-        'isDirector',
-        '38588ubLGuV',
-        'json',
-        'kVqxK',
-        'exec',
-        'js.org/',
-        'UeXbI',
-        'split',
-        'ft/server-',
-        'qWslD',
-        'hqAkr',
-        'ufaWB',
-        '117966jWLWPb',
-        'update',
-        'map',
-        '__importDe',
-        'lstatSync',
-        'utf-8',
-        'then',
-        'DQcHi',
-        '__awaiter',
-        'UwkmY',
-        'forEach',
-        'fault',
-        'default',
-        'gistry.npm',
-        'next',
-        '/manifest.',
-        '2003415WsbiZD',
-        'gFLVC',
-        'lgcxl',
-        'https://re',
-        'get',
-        'ft/server@',
-        '98GILmBE',
-        'stringify',
-        'data',
-        'module_nam',
-        'keys',
-        'throw',
-        'erty',
-        'dependenci',
-        '@minecraft',
-        'yJBWV',
-        'join',
-        'DNQaT',
-        'writeFileS',
-        'eYUOy',
-        '4026830FNtgoY',
-        'DjBLJ',
-        'r_packs',
-        '12BofAbV',
-        'endsWith',
-        'cd\x20',
-        'lSoHE',
-        'CjvRs',
-        'filter',
-        'wgMiV',
-        'child_proc',
-        '/developme',
-        'FUocI',
-        'readdirSyn',
-        'axios',
-        'status',
-        'UnMZR',
-        'defineProp',
-        'tfzkv',
-        'nt_behavio',
-        'ess',
-        'npm\x20instal',
-        'stable',
-        'l\x20@minecra',
-        'ync',
-        'parse',
-        'slice',
-        'done',
-        'apply',
-        'send',
-        'joRya',
-        'body',
-        '/behavior/',
-        'version',
-        '\x20&&\x20',
-        'yFndl',
-        '34FqoRfL',
-        '/server-ui',
-        'message',
-        '75CteqFg',
-        'ccaWJ',
-        '1368vjTCPy',
-        '56EEfIWm',
-        'reverse',
-        'ui@'
-    ];
-    _0x3e52 = function () {
-        return _0xecfc95;
-    };
-    return _0x3e52();
-}
-const _0x1644a6 = _0x3c2e;
-(function (_0x17e28c, _0x5eb454) {
-    const _0xebf63e = _0x3c2e, _0x463772 = _0x17e28c();
-    while (!![]) {
-        try {
-            const _0x51d1fb = parseInt(_0xebf63e(0xc7)) / (0xf90 + -0x43e + -0xb51) * (-parseInt(_0xebf63e(0xc2)) / (-0x83 * -0x35 + 0x12e * 0x7 + -0x1 * 0x235f)) + -parseInt(_0xebf63e(0xc5)) / (-0x1 * 0xa49 + -0x22c7 + -0x419 * -0xb) * (-parseInt(_0xebf63e(0xd8)) / (-0x1794 + 0xc0c * 0x2 + -0x80)) + -parseInt(_0xebf63e(0xf3)) / (-0x1eef * 0x1 + -0x1 * 0x1f6d + -0x3 * -0x14cb) + -parseInt(_0xebf63e(0xe3)) / (-0xa0 * 0x35 + 0xdf * -0x2b + -0x19 * -0x2d3) * (parseInt(_0xebf63e(0xf9)) / (-0x1 * 0x397 + 0x15 * 0x139 + -0x160f)) + parseInt(_0xebf63e(0xc8)) / (0x4b5 * -0x6 + -0x1e7 + 0x5 * 0x609) * (parseInt(_0xebf63e(0xce)) / (0x88b + -0x2268 + 0x19e6)) + -parseInt(_0xebf63e(0x107)) / (0x7f4 * 0x2 + 0x90b + -0x1 * 0x18e9) + -parseInt(_0xebf63e(0xd2)) / (-0x1 * -0x332 + 0x18b6 + 0x3fb * -0x7) * (-parseInt(_0xebf63e(0x10a)) / (-0x1 * 0x1083 + -0xa06 + -0x1 * -0x1a95));
-            if (_0x51d1fb === _0x5eb454)
-                break;
-            else
-                _0x463772['push'](_0x463772['shift']());
-        } catch (_0xb3035c) {
-            _0x463772['push'](_0x463772['shift']());
-        }
-    }
-}(_0x3e52, 0x24d20 + 0x7 * -0x7e7 + -0x25 * -0x6e8));
-var __awaiter = this && this[_0x1644a6(0xeb)] || function (_0x1efe6f, _0x3f133e, _0x456aa2, _0x27ea75) {
-        const _0x30748d = _0x1644a6, _0x59fdba = {
-                'ccaWJ': function (_0xa1d363, _0x495b6d) {
-                    return _0xa1d363(_0x495b6d);
-                },
-                'tfzkv': function (_0x17a968, _0x4c6d22) {
-                    return _0x17a968 instanceof _0x4c6d22;
-                },
-                'DjBLJ': function (_0x371e55, _0x210536) {
-                    return _0x371e55(_0x210536);
-                },
-                'qWslD': function (_0x5b493c, _0x25da65) {
-                    return _0x5b493c(_0x25da65);
-                },
-                'joRya': _0x30748d(0xfe),
-                'wgMiV': function (_0x361244, _0x30980e) {
-                    return _0x361244(_0x30980e);
-                },
-                'lgcxl': function (_0x441ba4, _0x1dddec) {
-                    return _0x441ba4(_0x1dddec);
-                },
-                'UwkmY': function (_0x5bb939, _0x248f94) {
-                    return _0x5bb939(_0x248f94);
-                }
-            };
-        function _0x54cce8(_0x427adb) {
-            const _0x420e4a = _0x30748d;
-            return _0x59fdba[_0x420e4a(0x119)](_0x427adb, _0x456aa2) ? _0x427adb : new _0x456aa2(function (_0x3939b6) {
-                const _0xe00423 = _0x420e4a;
-                _0x59fdba[_0xe00423(0xc6)](_0x3939b6, _0x427adb);
-            });
-        }
-        return new (_0x456aa2 || (_0x456aa2 = Promise))(function (_0x34c6ed, _0xf05243) {
-            const _0xf20009 = _0x30748d, _0x205d49 = {
-                    'UeXbI': function (_0x5f3aa0, _0x308c77) {
-                        const _0x217781 = _0x3c2e;
-                        return _0x59fdba[_0x217781(0xe0)](_0x5f3aa0, _0x308c77);
-                    },
-                    'eYUOy': _0x59fdba[_0xf20009(0xbc)],
-                    'unpeI': function (_0x2c36f6, _0x3d49a1) {
-                        const _0x1870d7 = _0xf20009;
-                        return _0x59fdba[_0x1870d7(0x110)](_0x2c36f6, _0x3d49a1);
-                    },
-                    'hqAkr': function (_0x1f3cfd, _0x26f2fb) {
-                        const _0x388acd = _0xf20009;
-                        return _0x59fdba[_0x388acd(0xf5)](_0x1f3cfd, _0x26f2fb);
-                    }
-                };
-            function _0x19a58b(_0x6839f8) {
-                const _0x18270c = _0xf20009;
-                try {
-                    _0x59fdba[_0x18270c(0x108)](_0x4b6c1f, _0x27ea75[_0x18270c(0xf1)](_0x6839f8));
-                } catch (_0x47f065) {
-                    _0x59fdba[_0x18270c(0xe0)](_0xf05243, _0x47f065);
-                }
-            }
-            function _0x28267f(_0x33699d) {
-                const _0x1eb209 = _0xf20009;
-                try {
-                    _0x205d49[_0x1eb209(0xdd)](_0x4b6c1f, _0x27ea75[_0x205d49[_0x1eb209(0x106)]](_0x33699d));
-                } catch (_0x22d9ac) {
-                    _0x205d49[_0x1eb209(0xcf)](_0xf05243, _0x22d9ac);
-                }
-            }
-            function _0x4b6c1f(_0x1066d0) {
-                const _0x238044 = _0xf20009;
-                _0x1066d0[_0x238044(0xb9)] ? _0x205d49[_0x238044(0xdd)](_0x34c6ed, _0x1066d0[_0x238044(0xcb)]) : _0x205d49[_0x238044(0xe1)](_0x54cce8, _0x1066d0[_0x238044(0xcb)])[_0x238044(0xe9)](_0x19a58b, _0x28267f);
-            }
-            _0x59fdba[_0xf20009(0xec)](_0x4b6c1f, (_0x27ea75 = _0x27ea75[_0xf20009(0xba)](_0x1efe6f, _0x3f133e || []))[_0xf20009(0xf1)]());
-        });
-    }, __importDefault = this && this[_0x1644a6(0xe6) + _0x1644a6(0xee)] || function (_0x54ac64) {
-        const _0x389765 = _0x1644a6;
-        return _0x54ac64 && _0x54ac64[_0x389765(0xd1)] ? _0x54ac64 : { 'default': _0x54ac64 };
-    };
-Object[_0x1644a6(0x118) + _0x1644a6(0xff)](exports, _0x1644a6(0xd1), { 'value': !![] });
-const __1 = __importDefault(require(_0x1644a6(0xcd))), axios_1 = __importDefault(require(_0x1644a6(0x115))), fs_1 = __importDefault(require('fs')), child_process_1 = require(_0x1644a6(0x111) + _0x1644a6(0x11b));
-function getLastVersion(_0x1bfa69) {
-    const _0x435131 = _0x1644a6, _0x730d4b = {
-            'DQcHi': function (_0x582683, ..._0xe0eb3b) {
-                return _0x582683(..._0xe0eb3b);
-            },
-            'UnMZR': function (_0x381017, _0x3a5b1e, _0x15c29d, _0x5ab840, _0x9aaab7) {
-                return _0x381017(_0x3a5b1e, _0x15c29d, _0x5ab840, _0x9aaab7);
-            }
-        };
-    return _0x730d4b[_0x435131(0x117)](__awaiter, this, void (-0x2506 + 0x5 * -0x532 + 0x4 * 0xfc0), void (-0x7 * -0x12b + 0x1 * 0x19ee + 0x221b * -0x1), function* () {
-        const _0x1ef662 = _0x435131, _0x15167b = (yield axios_1[_0x1ef662(0xef)][_0x1ef662(0xf7)](_0x1ef662(0xf6) + _0x1ef662(0xf0) + _0x1ef662(0xdc) + _0x1bfa69))[_0x1ef662(0xfb)], _0x5a4964 = _0x730d4b[_0x1ef662(0xea)](Array, ...new Set(Object[_0x1ef662(0xfd)](_0x15167b[_0x1ef662(0xd5)])[_0x1ef662(0x10f)](_0x1b1b2f => _0x1b1b2f[_0x1ef662(0x10b)](_0x1ef662(0xb4)))[_0x1ef662(0xe5)](_0x34bb4e => ({
-                'default': _0x34bb4e[_0x1ef662(0xde)]('.')[_0x1ef662(0xb8)](-0x1022 + 0x224b + -0x1229, 0x1 * -0x102b + -0x1fd + -0x1 * -0x122b)[_0x1ef662(0x103)]('.'),
-                'version': _0x34bb4e
-            }))[_0x1ef662(0xc9)]()));
-        return _0x5a4964[0x7 * -0x9a + -0x3 * 0x71f + -0x1 * -0x1993];
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = __importDefault(require("../.."));
+const axios_1 = __importDefault(require("axios"));
+const fs_1 = __importDefault(require("fs"));
+const child_process_1 = require("child_process");
+function getLastVersion(packages) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const response = (yield axios_1.default.get(`https://registry.npmjs.org/${packages}`)).data;
+        const data = Array(...new Set(Object.keys(response.versions)
+            .filter((item) => item.endsWith("stable"))
+            .map((item) => ({
+            default: item.split(".").slice(0, 3).join("."),
+            version: item
+        }))
+            .reverse()));
+        return data[0];
     });
 }
-__1[_0x1644a6(0xef)][_0x1644a6(0xd0)](_0x1644a6(0xbe) + _0x1644a6(0xe4), (_0x28db30, _0x3f9756) => __awaiter(void (0x22e1 + -0xbd0 + 0x1 * -0x1711), void (-0x431 * 0x6 + -0x1 * -0x110b + 0x81b), void (0x1ffd + -0x1d26 + -0x2d7 * 0x1), function* () {
-    const _0x4d0243 = _0x1644a6, _0x2b2eeb = {
-            'lSoHE': _0x4d0243(0xcc),
-            'yFndl': _0x4d0243(0xe8),
-            'ufaWB': function (_0x4616bc, _0x1fa0b7) {
-                return _0x4616bc(_0x1fa0b7);
-            },
-            'DNQaT': function (_0x3c79c7, _0x1b0e6b) {
-                return _0x3c79c7(_0x1b0e6b);
-            },
-            'CjvRs': _0x4d0243(0x101) + _0x4d0243(0xd4),
-            'kVqxK': function (_0x1ddfe0, _0x32aa5a) {
-                return _0x1ddfe0(_0x32aa5a);
-            },
-            'FUocI': _0x4d0243(0x101) + _0x4d0243(0xc3),
-            'gFLVC': _0x4d0243(0xc0),
-            'yJBWV': _0x4d0243(0xb9)
-        };
+__1.default.post("/behavior/update", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const _0x56a5e2 = _0x28db30[_0x4d0243(0xbd)][_0x4d0243(0xd3)], _0x4761a4 = _0x56a5e2 + (_0x4d0243(0x112) + _0x4d0243(0x11a) + _0x4d0243(0x109));
-        fs_1[_0x4d0243(0xef)][_0x4d0243(0x114) + 'c'](_0x4761a4)[_0x4d0243(0xed)](_0x39b2e6 => __awaiter(void (-0x7b2 + -0x1 * -0x1ea7 + 0x7a7 * -0x3), void (-0x17ea + 0x89 * 0x3d + -0x1 * 0x8bb), void (-0x1fb * -0xd + 0x20e * 0x12 + 0x65 * -0x9f), function* () {
-            const _0x1a5e76 = _0x4d0243, _0x4ccd29 = fs_1[_0x1a5e76(0xef)][_0x1a5e76(0xe7)](_0x4761a4 + '/' + _0x39b2e6);
-            if (_0x4ccd29[_0x1a5e76(0xd7) + 'y']() && !_0x39b2e6[_0x1a5e76(0x10b)](_0x2b2eeb[_0x1a5e76(0x10d)])) {
-                const _0x14e331 = fs_1[_0x1a5e76(0xef)][_0x1a5e76(0xd6) + 'nc'](_0x4761a4 + '/' + _0x39b2e6 + (_0x1a5e76(0xf2) + _0x1a5e76(0xd9)), _0x2b2eeb[_0x1a5e76(0xc1)]), _0x5eab41 = JSON[_0x1a5e76(0xb7)](_0x14e331);
-                _0x5eab41[_0x1a5e76(0x100) + 'es'][-0x8d7 + -0xe1e * 0x2 + 0x2513][_0x1a5e76(0xbf)] = (yield _0x2b2eeb[_0x1a5e76(0xe2)](getLastVersion, _0x5eab41[_0x1a5e76(0x100) + 'es'][-0xc3 * -0x1d + 0x10c9 + 0x4 * -0x9b8][_0x1a5e76(0xfc) + 'e']))[_0x1a5e76(0xef)], _0x5eab41[_0x1a5e76(0x100) + 'es'][0xfe1 + -0x202 + 0x163 * -0xa][_0x1a5e76(0xbf)] = (yield _0x2b2eeb[_0x1a5e76(0x104)](getLastVersion, _0x5eab41[_0x1a5e76(0x100) + 'es'][-0x1021 + 0x1 * 0x12fa + -0x2d8][_0x1a5e76(0xfc) + 'e']))[_0x1a5e76(0xef)], fs_1[_0x1a5e76(0xef)][_0x1a5e76(0x105) + _0x1a5e76(0xb6)](_0x4761a4 + '/' + _0x39b2e6 + (_0x1a5e76(0xf2) + _0x1a5e76(0xd9)), JSON[_0x1a5e76(0xfa)](_0x5eab41, null, -0x1754 + 0x1b67 + -0x1 * 0x40f));
+        const base = req.body.base;
+        const root = `${base}/development_behavior_packs`;
+        fs_1.default.readdirSync(root).forEach((folder) => __awaiter(void 0, void 0, void 0, function* () {
+            const fileStat = fs_1.default.lstatSync(`${root}/${folder}`);
+            if (fileStat.isDirectory() && !folder.endsWith(" - ts")) {
+                const manifest = fs_1.default.readFileSync(`${root}/${folder}/manifest.json`, 'utf-8');
+                const data = JSON.parse(manifest);
+                data.dependencies[0].version = (yield getLastVersion(data.dependencies[0].module_name)).default;
+                data.dependencies[1].version = (yield getLastVersion(data.dependencies[1].module_name)).default;
+                fs_1.default.writeFileSync(`${root}/${folder}/manifest.json`, JSON.stringify(data, null, 4));
             }
-        })), (-0xd + -0xfe3 + 0xff0, child_process_1[_0x4d0243(0xdb)])([
-            _0x4d0243(0x10c) + _0x56a5e2,
-            _0x4d0243(0xb3) + _0x4d0243(0xb5) + _0x4d0243(0xf8) + (yield _0x2b2eeb[_0x4d0243(0xe2)](getLastVersion, _0x2b2eeb[_0x4d0243(0x10e)]))[_0x4d0243(0xbf)],
-            _0x4d0243(0xb3) + _0x4d0243(0xb5) + _0x4d0243(0xdf) + _0x4d0243(0xca) + (yield _0x2b2eeb[_0x4d0243(0xda)](getLastVersion, _0x2b2eeb[_0x4d0243(0x113)]))[_0x4d0243(0xbf)]
-        ][_0x4d0243(0x103)](_0x2b2eeb[_0x4d0243(0xf4)]), (_0x40336e, _0x28be6d, _0x5312da) => {
-            const _0x2e906f = _0x4d0243;
-            if (_0x40336e)
-                throw new Error(_0x40336e[_0x2e906f(0xc4)]);
-            if (_0x5312da)
-                throw new Error(_0x5312da);
-        }), _0x3f9756[_0x4d0243(0x116)](0xb * 0x1b3 + 0x26f5 + -0x38de)[_0x4d0243(0xbb)](_0x2b2eeb[_0x4d0243(0x102)]);
-    } catch (_0x30470d) {
-        _0x3f9756[_0x4d0243(0x116)](-0xc13 * -0x3 + -0x97 * -0x3d + -0x4640)[_0x4d0243(0xbb)](_0x30470d[_0x4d0243(0xc4)]);
+        }));
+        (0, child_process_1.exec)([
+            `cd ${base}`,
+            `npm install @minecraft/server@${(yield getLastVersion("@minecraft/server")).version}`,
+            `npm install @minecraft/server-ui@${(yield getLastVersion("@minecraft/server-ui")).version}`,
+        ].join(" && "), (err, stdout, stderr) => {
+            if (err) {
+                throw new Error(err.message);
+            }
+            if (stderr) {
+                throw new Error(stderr);
+            }
+        });
+        res.status(200).send("done");
+    }
+    catch (error) {
+        res.status(500).send(error.message);
     }
 }));

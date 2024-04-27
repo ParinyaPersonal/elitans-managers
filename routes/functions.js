@@ -1,193 +1,50 @@
-'use strict';
-const _0x3403e9 = _0x3f53;
-(function (_0x1fb9f5, _0x225329) {
-    const _0x3485fd = _0x3f53, _0x101394 = _0x1fb9f5();
-    while (!![]) {
-        try {
-            const _0x56398d = parseInt(_0x3485fd(0x184)) / (0x1d63 * 0x1 + 0xc * 0x197 + -0x3076) * (parseInt(_0x3485fd(0x188)) / (-0x6ee * -0x1 + -0x26df + -0x1 * -0x1ff3)) + parseInt(_0x3485fd(0x192)) / (-0x9 * 0x43a + 0x1d39 + 0x5 * 0x1c4) * (parseInt(_0x3485fd(0x187)) / (0x20e * -0xb + -0x1cac + 0x334a)) + parseInt(_0x3485fd(0x1a6)) / (-0x37 * 0x43 + -0x1d5 * 0x6 + 0x1968) + parseInt(_0x3485fd(0x1a7)) / (0x3 * -0x619 + -0x2701 + 0x3952) + -parseInt(_0x3485fd(0x194)) / (-0xf * -0x1eb + 0x6a9 * 0x1 + -0x2367) + parseInt(_0x3485fd(0x197)) / (0x2511 + -0x1541 + 0x8 * -0x1f9) + parseInt(_0x3485fd(0x1a9)) / (0x2a * 0xb8 + -0x4 * -0x10c + -0x2257) * (-parseInt(_0x3485fd(0x1a2)) / (-0x1b86 + -0x908 + -0x926 * -0x4));
-            if (_0x56398d === _0x225329)
-                break;
-            else
-                _0x101394['push'](_0x101394['shift']());
-        } catch (_0x26be80) {
-            _0x101394['push'](_0x101394['shift']());
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.load = exports.encryptData = exports.decryptData = void 0;
+const fs_1 = __importDefault(require("fs"));
+const crypto_js_1 = __importDefault(require("crypto-js"));
+const key = "APISENDER";
+function decryptData(data) {
+    return crypto_js_1.default.AES.decrypt(data, key).toString(crypto_js_1.default.enc.Utf8);
+}
+exports.decryptData = decryptData;
+function encryptData(data) {
+    return crypto_js_1.default.AES.encrypt(data, key).toString();
+}
+exports.encryptData = encryptData;
+function load(dir, proviso, fileFunc, dirFunc) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const subDir = [];
+        const files = fs_1.default.readdirSync(dir);
+        for (const file of files) {
+            const filePath = `${dir}/${file}`;
+            const fileStat = fs_1.default.lstatSync(filePath);
+            if (fileStat.isDirectory()) {
+                subDir.push(file);
+                if (dirFunc)
+                    yield dirFunc(filePath);
+            }
+            else if (proviso(file))
+                yield fileFunc(filePath);
         }
-    }
-}(_0x2982, -0x21c25 * -0x7 + 0xe0d3f + -0x138891));
-function _0x2982() {
-    const _0x400b9f = [
-        'bzbQF',
-        '__importDe',
-        'dVqPU',
-        'Hdmox',
-        'isDirector',
-        'push',
-        'value',
-        'xJEum',
-        'next',
-        '2kJiozt',
-        'encryptDat',
-        'load',
-        '12USBxvy',
-        '972778thtQKY',
-        'apply',
-        'fault',
-        'toString',
-        'crypto-js',
-        'throw',
-        'AES',
-        'lqhSf',
-        'encrypt',
-        '__esModule',
-        '182847YNnvKG',
-        'UcWRg',
-        '1208263bLhHmx',
-        'then',
-        'WyLzq',
-        '3578856ubCajR',
-        'done',
-        'decryptDat',
-        'RAQnM',
-        'erty',
-        'existsSync',
-        'APISENDER',
-        'lstatSync',
-        'readdirSyn',
-        'PCKuY',
-        'NIdAR',
-        '10ntJWMX',
-        'decrypt',
-        'default',
-        'Utf8',
-        '3004100mmGHYF',
-        '1339752KTcCZP',
-        '__awaiter',
-        '14812164beowcC',
-        'enc',
-        'defineProp',
-        'uguYb'
-    ];
-    _0x2982 = function () {
-        return _0x400b9f;
-    };
-    return _0x2982();
-}
-var __awaiter = this && this[_0x3403e9(0x1a8)] || function (_0x2c7619, _0x5a96ca, _0x54dc77, _0x50876b) {
-        const _0x4de3e8 = _0x3403e9, _0x3f8816 = {
-                'dVqPU': function (_0x22a4c2, _0x3021c6) {
-                    return _0x22a4c2(_0x3021c6);
-                },
-                'PCKuY': function (_0x4c4c50, _0x1cbace) {
-                    return _0x4c4c50 instanceof _0x1cbace;
-                },
-                'RAQnM': function (_0x772d18, _0x271df2) {
-                    return _0x772d18(_0x271df2);
-                },
-                'UcWRg': _0x4de3e8(0x18d),
-                'NIdAR': function (_0x2a19b8, _0x50a616) {
-                    return _0x2a19b8(_0x50a616);
-                },
-                'xJEum': function (_0xfcf82e, _0xc3f2a5) {
-                    return _0xfcf82e(_0xc3f2a5);
-                }
-            };
-        function _0x30b8f8(_0x3d964f) {
-            const _0x406fcd = _0x4de3e8, _0xecf679 = {
-                    'WyLzq': function (_0x25cd2a, _0x5ee2a0) {
-                        const _0x430aa2 = _0x3f53;
-                        return _0x3f8816[_0x430aa2(0x17d)](_0x25cd2a, _0x5ee2a0);
-                    }
-                };
-            return _0x3f8816[_0x406fcd(0x1a0)](_0x3d964f, _0x54dc77) ? _0x3d964f : new _0x54dc77(function (_0x2bedf4) {
-                const _0x45e56c = _0x406fcd;
-                _0xecf679[_0x45e56c(0x196)](_0x2bedf4, _0x3d964f);
-            });
-        }
-        return new (_0x54dc77 || (_0x54dc77 = Promise))(function (_0x44d49e, _0x30dfba) {
-            const _0x14aeec = _0x4de3e8, _0x29bb98 = {
-                    'Hdmox': function (_0x50a42c, _0x2bca29) {
-                        const _0x4e99b1 = _0x3f53;
-                        return _0x3f8816[_0x4e99b1(0x1a1)](_0x50a42c, _0x2bca29);
-                    },
-                    'bzbQF': function (_0x547d36, _0x1c7b0e) {
-                        const _0x159d16 = _0x3f53;
-                        return _0x3f8816[_0x159d16(0x1a1)](_0x547d36, _0x1c7b0e);
-                    }
-                };
-            function _0x52d83c(_0x274a34) {
-                const _0x51e4f8 = _0x3f53;
-                try {
-                    _0x3f8816[_0x51e4f8(0x19a)](_0x2d4778, _0x50876b[_0x51e4f8(0x183)](_0x274a34));
-                } catch (_0x31ea05) {
-                    _0x3f8816[_0x51e4f8(0x17d)](_0x30dfba, _0x31ea05);
-                }
-            }
-            function _0x441fe0(_0x670bbd) {
-                const _0x41b658 = _0x3f53;
-                try {
-                    _0x3f8816[_0x41b658(0x17d)](_0x2d4778, _0x50876b[_0x3f8816[_0x41b658(0x193)]](_0x670bbd));
-                } catch (_0x548f2e) {
-                    _0x3f8816[_0x41b658(0x19a)](_0x30dfba, _0x548f2e);
-                }
-            }
-            function _0x2d4778(_0x4d6125) {
-                const _0x3568ca = _0x3f53;
-                _0x4d6125[_0x3568ca(0x198)] ? _0x29bb98[_0x3568ca(0x17e)](_0x44d49e, _0x4d6125[_0x3568ca(0x181)]) : _0x29bb98[_0x3568ca(0x17b)](_0x30b8f8, _0x4d6125[_0x3568ca(0x181)])[_0x3568ca(0x195)](_0x52d83c, _0x441fe0);
-            }
-            _0x3f8816[_0x14aeec(0x182)](_0x2d4778, (_0x50876b = _0x50876b[_0x14aeec(0x189)](_0x2c7619, _0x5a96ca || []))[_0x14aeec(0x183)]());
-        });
-    }, __importDefault = this && this[_0x3403e9(0x17c) + _0x3403e9(0x18a)] || function (_0x171b6e) {
-        const _0x39b46 = _0x3403e9;
-        return _0x171b6e && _0x171b6e[_0x39b46(0x191)] ? _0x171b6e : { 'default': _0x171b6e };
-    };
-Object[_0x3403e9(0x1ab) + _0x3403e9(0x19b)](exports, _0x3403e9(0x191), { 'value': !![] }), exports[_0x3403e9(0x186)] = exports[_0x3403e9(0x185) + 'a'] = exports[_0x3403e9(0x199) + 'a'] = void (0x7 * -0x4d5 + -0x819 + 0x29ec);
-const fs_1 = __importDefault(require('fs')), crypto_js_1 = __importDefault(require(_0x3403e9(0x18c))), key = _0x3403e9(0x19d);
-function decryptData(_0x105700) {
-    const _0x2ed946 = _0x3403e9;
-    return crypto_js_1[_0x2ed946(0x1a4)][_0x2ed946(0x18e)][_0x2ed946(0x1a3)](_0x105700, key)[_0x2ed946(0x18b)](crypto_js_1[_0x2ed946(0x1a4)][_0x2ed946(0x1aa)][_0x2ed946(0x1a5)]);
-}
-exports[_0x3403e9(0x199) + 'a'] = decryptData;
-function encryptData(_0x192f2a) {
-    const _0x944e94 = _0x3403e9;
-    return crypto_js_1[_0x944e94(0x1a4)][_0x944e94(0x18e)][_0x944e94(0x190)](_0x192f2a, key)[_0x944e94(0x18b)]();
-}
-function _0x3f53(_0x25f537, _0x5b133f) {
-    const _0x46c3c2 = _0x2982();
-    return _0x3f53 = function (_0x3e5ca4, _0x471ac2) {
-        _0x3e5ca4 = _0x3e5ca4 - (-0x265 + -0x11 * -0xa6 + -0x727);
-        let _0x29e246 = _0x46c3c2[_0x3e5ca4];
-        return _0x29e246;
-    }, _0x3f53(_0x25f537, _0x5b133f);
-}
-exports[_0x3403e9(0x185) + 'a'] = encryptData;
-function load(_0x4aff07, _0x1933e2, _0x1cce87, _0x5bcfc2) {
-    const _0x2590a5 = _0x3403e9, _0x52d311 = {
-            'uguYb': function (_0x2657ad, _0x16b539) {
-                return _0x2657ad(_0x16b539);
-            },
-            'lqhSf': function (_0x4a4e99, _0x1c45f8, _0xec2e22, _0x18754d, _0x20d7ff) {
-                return _0x4a4e99(_0x1c45f8, _0xec2e22, _0x18754d, _0x20d7ff);
-            }
-        };
-    return _0x52d311[_0x2590a5(0x18f)](__awaiter, this, void (0x1233 + 0x53 + 0x943 * -0x2), void (-0x7f * 0x1a + -0x115 * -0x11 + -0x57f), function* () {
-        const _0x4777ef = _0x2590a5, _0x47fc12 = [], _0x3a5294 = fs_1[_0x4777ef(0x1a4)][_0x4777ef(0x19f) + 'c'](_0x4aff07);
-        for (const _0x195220 of _0x3a5294) {
-            const _0x3b018d = _0x4aff07 + '/' + _0x195220, _0x456d4f = fs_1[_0x4777ef(0x1a4)][_0x4777ef(0x19e)](_0x3b018d);
-            if (_0x456d4f[_0x4777ef(0x17f) + 'y']()) {
-                _0x47fc12[_0x4777ef(0x180)](_0x195220);
-                if (_0x5bcfc2)
-                    yield _0x52d311[_0x4777ef(0x17a)](_0x5bcfc2, _0x3b018d);
-            } else {
-                if (_0x52d311[_0x4777ef(0x17a)](_0x1933e2, _0x195220))
-                    yield _0x52d311[_0x4777ef(0x17a)](_0x1cce87, _0x3b018d);
-            }
-        }
-        for (const _0xfc2a41 of _0x47fc12) {
-            const _0x4d6d78 = _0x4aff07 + '/' + _0xfc2a41;
-            if (!fs_1[_0x4777ef(0x1a4)][_0x4777ef(0x19c)](_0x4d6d78))
+        for (const folder of subDir) {
+            const subDir = `${dir}/${folder}`;
+            if (!fs_1.default.existsSync(subDir))
                 continue;
-            yield _0x52d311[_0x4777ef(0x18f)](load, _0x4d6d78, _0x1933e2, _0x1cce87, _0x5bcfc2);
+            yield load(subDir, proviso, fileFunc, dirFunc);
         }
     });
 }
-exports[_0x3403e9(0x186)] = load;
+exports.load = load;

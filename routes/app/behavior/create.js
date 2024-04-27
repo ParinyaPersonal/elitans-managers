@@ -1,281 +1,65 @@
-'use strict';
-const _0x3f2688 = _0x5d8e;
-(function (_0x4f1975, _0x131e20) {
-    const _0x54d187 = _0x5d8e, _0x88602f = _0x4f1975();
-    while (!![]) {
-        try {
-            const _0x3765b4 = parseInt(_0x54d187(0x150)) / (0x274 * 0x8 + -0x1e72 * -0x1 + 0x3211 * -0x1) * (parseInt(_0x54d187(0x11c)) / (-0x13b * 0xc + 0x777 + 0x74f)) + parseInt(_0x54d187(0x110)) / (-0xd4c + 0x250c + -0x3b * 0x67) * (parseInt(_0x54d187(0x121)) / (0x1c6 + 0x596 * 0x2 + -0x2 * 0x677)) + -parseInt(_0x54d187(0x105)) / (0x1 * 0x25cd + -0xb13 * -0x2 + -0x3bee) * (parseInt(_0x54d187(0x115)) / (0x4d5 * -0x5 + 0x1082 + 0x189 * 0x5)) + parseInt(_0x54d187(0x145)) / (-0x63 * 0x19 + -0x2 * -0x1213 + 0x69d * -0x4) + parseInt(_0x54d187(0xfa)) / (-0xce8 + 0x15c5 + -0x8d5) + -parseInt(_0x54d187(0xf1)) / (-0x1fcb + -0x4f + 0x2023) * (parseInt(_0x54d187(0x131)) / (0x682 + 0x48b + -0xb03 * 0x1)) + -parseInt(_0x54d187(0x10a)) / (0x1860 + 0x181f + -0x4 * 0xc1d);
-            if (_0x3765b4 === _0x131e20)
-                break;
-            else
-                _0x88602f['push'](_0x88602f['shift']());
-        } catch (_0x5abf60) {
-            _0x88602f['push'](_0x88602f['shift']());
-        }
-    }
-}(_0x370d, 0x78f36 + -0x10d89 * -0x9 + -0x9d6e2));
-function _0x370d() {
-    const _0x411bce = [
-        'buffer',
-        'post',
-        'node_modul',
-        '__awaiter',
-        '\x20-\x20ts/src',
-        '2885160IcMebx',
-        'sHsSH',
-        'xYVnR',
-        'done',
-        'then',
-        'nifest\x20or\x20',
-        'tMqln',
-        'api',
-        'ing',
-        '/scripts',
-        'status',
-        '3003545GcHDlr',
-        'json',
-        'value',
-        'ROqDz',
-        'parse',
-        '7404199PHQNeq',
-        'es2016',
-        'KYCIL',
-        '\x20-\x20ts/tsco',
-        '__importDe',
-        'body',
-        '2590278ObklbH',
-        'memoryStor',
-        '/manifest.',
-        '../..',
-        'ync',
-        '6sLZBnX',
-        'lcfVI',
-        '3|4|1|0|2',
-        'mkdirSync',
-        'Missing\x20ma',
-        'default',
-        'log',
-        '23050fPZiwK',
-        'node',
-        'aWQVn',
-        'es2017',
-        'multer',
-        '4tNIVZU',
-        'IeJnV',
-        'XVQps',
-        'CjxPU',
-        'apply',
-        '__esModule',
-        'DXrFr',
-        'gRZHs',
-        'ErJSw',
-        'nfig.json',
-        'manifest',
-        'es2015',
-        '.png',
-        'ESNext',
-        'geVRu',
-        'dWDiA',
-        '2685730ufhgLU',
-        'folder',
-        '\x20-\x20ts',
-        '/pack_icon',
-        'qDNmI',
-        'javascript',
-        'dom',
-        'dependenci',
-        'create',
-        'throw',
-        '\x20-\x20ts/src/',
-        '../',
-        'erty',
-        'language',
-        'r_packs/',
-        'GjCSF',
-        'base',
-        'xKflY',
-        'send',
-        'main.ts',
-        '4399913sZDDYq',
-        'SWhSn',
-        'es6',
-        'dsOSm',
-        'TFPuX',
-        'age',
-        'rgvDj',
-        'single',
-        'nt_behavio',
-        'eqLhj',
-        'file',
-        '14AXpgFy',
-        'writeFileS',
-        'bYjWy',
-        'SWfsJ',
-        'es2017.str',
-        'stringify',
-        '/behavior/',
-        'next',
-        './src',
-        '/developme',
-        'Missing\x20ic',
-        'es2021',
-        'defineProp',
-        '9QbaXOU',
-        'fault',
-        'split',
-        'icon'
-    ];
-    _0x370d = function () {
-        return _0x411bce;
-    };
-    return _0x370d();
-}
-var __awaiter = this && this[_0x3f2688(0xf8)] || function (_0x82e5e6, _0x4ddb8f, _0xa980c7, _0x590c24) {
-        const _0xdd82c9 = _0x3f2688, _0x180b38 = {
-                'CjxPU': function (_0x8bf89a, _0x12936f) {
-                    return _0x8bf89a(_0x12936f);
-                },
-                'TFPuX': function (_0x322808, _0x35453f) {
-                    return _0x322808 instanceof _0x35453f;
-                },
-                'sHsSH': function (_0x5e6e47, _0x49aaba) {
-                    return _0x5e6e47(_0x49aaba);
-                },
-                'xYVnR': _0xdd82c9(0x13a)
-            };
-        function _0x2505ba(_0x136176) {
-            const _0x19f590 = _0xdd82c9;
-            return _0x180b38[_0x19f590(0x149)](_0x136176, _0xa980c7) ? _0x136176 : new _0xa980c7(function (_0x4130fe) {
-                const _0x5eb510 = _0x19f590;
-                _0x180b38[_0x5eb510(0x124)](_0x4130fe, _0x136176);
-            });
-        }
-        return new (_0xa980c7 || (_0xa980c7 = Promise))(function (_0x4ac48f, _0x2a434c) {
-            const _0x371287 = _0xdd82c9, _0x4bebf6 = {
-                    'gRZHs': function (_0x4556f6, _0x1a7b86) {
-                        const _0x57ccea = _0x5d8e;
-                        return _0x180b38[_0x57ccea(0xfb)](_0x4556f6, _0x1a7b86);
-                    },
-                    'ROqDz': function (_0x338809, _0x294f21) {
-                        const _0x4d8205 = _0x5d8e;
-                        return _0x180b38[_0x4d8205(0xfb)](_0x338809, _0x294f21);
-                    },
-                    'dsOSm': _0x180b38[_0x371287(0xfc)],
-                    'xKflY': function (_0x4192a5, _0x40c52a) {
-                        const _0x3c19da = _0x371287;
-                        return _0x180b38[_0x3c19da(0x124)](_0x4192a5, _0x40c52a);
-                    }
-                };
-            function _0x531a7e(_0x9a59e5) {
-                const _0x2e6dca = _0x371287;
-                try {
-                    _0x4bebf6[_0x2e6dca(0x128)](_0x59b75e, _0x590c24[_0x2e6dca(0xeb)](_0x9a59e5));
-                } catch (_0x5692a5) {
-                    _0x4bebf6[_0x2e6dca(0x108)](_0x2a434c, _0x5692a5);
-                }
-            }
-            function _0x579931(_0x490431) {
-                const _0x321bcf = _0x371287;
-                try {
-                    _0x4bebf6[_0x321bcf(0x108)](_0x59b75e, _0x590c24[_0x4bebf6[_0x321bcf(0x148)]](_0x490431));
-                } catch (_0x54bf4d) {
-                    _0x4bebf6[_0x321bcf(0x142)](_0x2a434c, _0x54bf4d);
-                }
-            }
-            function _0x59b75e(_0x3b9214) {
-                const _0x533478 = _0x371287;
-                _0x3b9214[_0x533478(0xfd)] ? _0x4bebf6[_0x533478(0x142)](_0x4ac48f, _0x3b9214[_0x533478(0x107)]) : _0x4bebf6[_0x533478(0x128)](_0x2505ba, _0x3b9214[_0x533478(0x107)])[_0x533478(0xfe)](_0x531a7e, _0x579931);
-            }
-            _0x180b38[_0x371287(0x124)](_0x59b75e, (_0x590c24 = _0x590c24[_0x371287(0x125)](_0x82e5e6, _0x4ddb8f || []))[_0x371287(0xeb)]());
-        });
-    }, __importDefault = this && this[_0x3f2688(0x10e) + _0x3f2688(0xf2)] || function (_0x5e4cce) {
-        const _0x51a022 = _0x3f2688;
-        return _0x5e4cce && _0x5e4cce[_0x51a022(0x126)] ? _0x5e4cce : { 'default': _0x5e4cce };
-    };
-Object[_0x3f2688(0xf0) + _0x3f2688(0x13d)](exports, _0x3f2688(0x126), { 'value': !![] });
-function _0x5d8e(_0x381ca7, _0x436889) {
-    const _0x34506d = _0x370d();
-    return _0x5d8e = function (_0x1cc007, _0x354ef6) {
-        _0x1cc007 = _0x1cc007 - (0x10c5 * -0x1 + 0x1516 + -0x366);
-        let _0x50f8b6 = _0x34506d[_0x1cc007];
-        return _0x50f8b6;
-    }, _0x5d8e(_0x381ca7, _0x436889);
-}
-const __1 = __importDefault(require(_0x3f2688(0x113))), fs_1 = __importDefault(require('fs')), multer_1 = __importDefault(require(_0x3f2688(0x120))), storage = multer_1[_0x3f2688(0x11a)][_0x3f2688(0x111) + _0x3f2688(0x14a)](), upload = (-0xdac + -0x1f0e + 0x2cba, multer_1[_0x3f2688(0x11a)])({ 'storage': storage });
-__1[_0x3f2688(0x11a)][_0x3f2688(0xf6)](_0x3f2688(0x156) + _0x3f2688(0x139), upload[_0x3f2688(0x14c)](_0x3f2688(0xf4)), (_0x28ecf0, _0x39a080) => __awaiter(void (0xec9 + -0x172f + -0x5 * -0x1ae), void (0x1 * -0x1fb9 + 0xcae + 0x5 * 0x3cf), void (0x12e * 0xf + 0x1fde + -0x3190), function* () {
-    const _0x3dffa4 = _0x3f2688, _0x232985 = {
-            'GjCSF': function (_0x3b9efd, _0x4c9da9) {
-                return _0x3b9efd || _0x4c9da9;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = __importDefault(require("../.."));
+const fs_1 = __importDefault(require("fs"));
+const multer_1 = __importDefault(require("multer"));
+const storage = multer_1.default.memoryStorage();
+const upload = (0, multer_1.default)({ storage: storage });
+__1.default.post("/behavior/create", upload.single('icon'), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const manifest = JSON.parse(req.body.manifest);
+    const base = req.body.base;
+    const folder = req.body.folder;
+    const language = req.body.language;
+    const api = req.body.api;
+    console.log(language);
+    if (!manifest || !base)
+        res.status(400).send("Missing manifest or base");
+    if (!req.file)
+        res.status(400).send("Missing icon");
+    const icon = req.file.buffer;
+    fs_1.default.mkdirSync(`${base}/development_behavior_packs/${folder}`, { recursive: true });
+    if (manifest.dependencies) {
+        fs_1.default.mkdirSync(`${base}/development_behavior_packs/${folder} - ts`, { recursive: true });
+        fs_1.default.mkdirSync(`${base}/development_behavior_packs/${folder} - ts/src`, { recursive: true });
+        if (language === "javascript")
+            return;
+        fs_1.default.writeFileSync(`${base}/development_behavior_packs/${folder} - ts/src/main.ts`, "");
+        fs_1.default.writeFileSync(`${base}/development_behavior_packs/${folder} - ts/tsconfig.json`, JSON.stringify({
+            "compilerOptions": {
+                "target": "ESNext",
+                "lib": [
+                    "dom",
+                    "es6",
+                    "es2015",
+                    "es2016",
+                    "es2017",
+                    "es2017.string",
+                    "es2021"
+                ],
+                "moduleResolution": "node",
+                "module": "ESNext",
+                "outDir": `../${folder}/scripts`,
+                "rootDir": "./src",
+                "sourceMap": false
             },
-            'SWhSn': _0x3dffa4(0x119) + _0x3dffa4(0xff) + _0x3dffa4(0x141),
-            'bYjWy': _0x3dffa4(0xee) + 'on',
-            'eqLhj': _0x3dffa4(0x117),
-            'aWQVn': function (_0x2e3d56, _0x2ff8bf) {
-                return _0x2e3d56 === _0x2ff8bf;
-            },
-            'ErJSw': _0x3dffa4(0x136),
-            'SWfsJ': _0x3dffa4(0x12e),
-            'geVRu': _0x3dffa4(0x137),
-            'DXrFr': _0x3dffa4(0x147),
-            'dWDiA': _0x3dffa4(0x12c),
-            'KYCIL': _0x3dffa4(0x10b),
-            'qDNmI': _0x3dffa4(0x11f),
-            'lcfVI': _0x3dffa4(0x154) + _0x3dffa4(0x102),
-            'tMqln': _0x3dffa4(0xef),
-            'XVQps': _0x3dffa4(0x11d),
-            'IeJnV': _0x3dffa4(0xec),
-            'rgvDj': _0x3dffa4(0xf7) + 'es'
-        }, _0x54db99 = JSON[_0x3dffa4(0x109)](_0x28ecf0[_0x3dffa4(0x10f)][_0x3dffa4(0x12b)]), _0x34dc1e = _0x28ecf0[_0x3dffa4(0x10f)][_0x3dffa4(0x141)], _0x4a4909 = _0x28ecf0[_0x3dffa4(0x10f)][_0x3dffa4(0x132)], _0x178699 = _0x28ecf0[_0x3dffa4(0x10f)][_0x3dffa4(0x13e)], _0x2129aa = _0x28ecf0[_0x3dffa4(0x10f)][_0x3dffa4(0x101)];
-    console[_0x3dffa4(0x11b)](_0x178699);
-    if (_0x232985[_0x3dffa4(0x140)](!_0x54db99, !_0x34dc1e))
-        _0x39a080[_0x3dffa4(0x104)](0x183f + 0x1b41 * -0x1 + 0xd * 0x5a)[_0x3dffa4(0x143)](_0x232985[_0x3dffa4(0x146)]);
-    if (!_0x28ecf0[_0x3dffa4(0x14f)])
-        _0x39a080[_0x3dffa4(0x104)](0xe12 + 0x1547 + 0xb43 * -0x3)[_0x3dffa4(0x143)](_0x232985[_0x3dffa4(0x152)]);
-    const _0x2b3f49 = _0x28ecf0[_0x3dffa4(0x14f)][_0x3dffa4(0xf5)];
-    fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x118)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909, { 'recursive': !![] });
-    if (_0x54db99[_0x3dffa4(0x138) + 'es']) {
-        const _0x11ad1e = _0x232985[_0x3dffa4(0x14e)][_0x3dffa4(0xf3)]('|');
-        let _0x22f34b = -0x1903 + -0x29 * 0x14 + 0x1f * 0xe9;
-        while (!![]) {
-            switch (_0x11ad1e[_0x22f34b++]) {
-            case '0':
-                fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x151) + _0x3dffa4(0x114)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909 + (_0x3dffa4(0x13b) + _0x3dffa4(0x144)), '');
-                continue;
-            case '1':
-                if (_0x232985[_0x3dffa4(0x11e)](_0x178699, _0x232985[_0x3dffa4(0x129)]))
-                    return;
-                continue;
-            case '2':
-                fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x151) + _0x3dffa4(0x114)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909 + (_0x3dffa4(0x10d) + _0x3dffa4(0x12a)), JSON[_0x3dffa4(0x155)]({
-                    'compilerOptions': {
-                        'target': _0x232985[_0x3dffa4(0x153)],
-                        'lib': [
-                            _0x232985[_0x3dffa4(0x12f)],
-                            _0x232985[_0x3dffa4(0x127)],
-                            _0x232985[_0x3dffa4(0x130)],
-                            _0x232985[_0x3dffa4(0x10c)],
-                            _0x232985[_0x3dffa4(0x135)],
-                            _0x232985[_0x3dffa4(0x116)],
-                            _0x232985[_0x3dffa4(0x100)]
-                        ],
-                        'moduleResolution': _0x232985[_0x3dffa4(0x123)],
-                        'module': _0x232985[_0x3dffa4(0x153)],
-                        'outDir': _0x3dffa4(0x13c) + _0x4a4909 + _0x3dffa4(0x103),
-                        'rootDir': _0x232985[_0x3dffa4(0x122)],
-                        'sourceMap': ![]
-                    },
-                    'exclude': [_0x232985[_0x3dffa4(0x14b)]]
-                }, null, 0x235a + 0xd3 * 0x9 + -0x2ac1));
-                continue;
-            case '3':
-                fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x118)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909 + _0x3dffa4(0x133), { 'recursive': !![] });
-                continue;
-            case '4':
-                fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x118)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909 + _0x3dffa4(0xf9), { 'recursive': !![] });
-                continue;
-            }
-            break;
-        }
+            "exclude": [
+                "node_modules"
+            ]
+        }, null, 4));
     }
-    fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x151) + _0x3dffa4(0x114)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909 + (_0x3dffa4(0x134) + _0x3dffa4(0x12d)), _0x2b3f49), fs_1[_0x3dffa4(0x11a)][_0x3dffa4(0x151) + _0x3dffa4(0x114)](_0x34dc1e + (_0x3dffa4(0xed) + _0x3dffa4(0x14d) + _0x3dffa4(0x13f)) + _0x4a4909 + (_0x3dffa4(0x112) + _0x3dffa4(0x106)), JSON[_0x3dffa4(0x155)](_0x54db99, null, -0x1 * -0x1eef + 0x241 * 0x3 + -0x2e6 * 0xd)), _0x39a080[_0x3dffa4(0x104)](-0x2690 + -0x14a0 + 0x328 * 0x13)[_0x3dffa4(0x143)]('OK');
+    fs_1.default.writeFileSync(`${base}/development_behavior_packs/${folder}/pack_icon.png`, icon);
+    fs_1.default.writeFileSync(`${base}/development_behavior_packs/${folder}/manifest.json`, JSON.stringify(manifest, null, 4));
+    res.status(200).send("OK");
 }));
