@@ -2,7 +2,6 @@
   "scripts": {
     "start": "node routes/index.js",
     "dev": "nodemon routes/index.js",
-    "css": "npx tailwindcss -i ./dist/assets/css/doing.css -o ./dist/assets/css/active.css --watch",
     "obf": "node src/obfuscate.js",
     "bulid": "tsc --build src/front/tsconfig.json && tsc --build src/back/tsconfig.json"
   },

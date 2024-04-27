@@ -13,7 +13,6 @@ dist-ssr
 src
 lib
 tailwind.config.js*
-css
 
 # Editor directories and files
 .vscode/*
