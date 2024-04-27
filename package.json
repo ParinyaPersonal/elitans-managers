@@ -3,7 +3,8 @@
     "start": "node routes/index.js",
     "dev": "nodemon routes/index.js",
     "css": "npx tailwindcss -i ./dist/assets/doing.css -o ./dist/assets/active.css --watch",
-    "obf": "node src/obfuscate.js"
+    "obf": "node src/obfuscate.js",
+    "bulid": "tsc --build src/front/tsconfig.json && tsc --build src/back/tsconfig.json"
   },
   "dependencies": {
     "adm-zip": "^0.5.12",
